@@ -1,0 +1,752 @@
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/2.0> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/bpo/1-2> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR> <http://purl.org/dc/terms/description> "This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. \n\nThis ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. \n\nAdditionally, DOR ontology would supports the processes involved in depositing reclaimed materials in a material bank,digital disgnosis, the conditions for acceptance of a material bank for second life cycle reuse, and the documentation required to ensure proper tracking and accounting of the materials in the construction industry.."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR> <http://www.w3.org/2000/01/rdf-schema#comment> "&quot;DOR&quot; by &quot;Arghavan Akbarieh&quot; is licensed\nunder CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR> <http://www.w3.org/2000/01/rdf-schema#comment> "&quot;DOR&quot; by developer groups is\nlicensed under CC BY 4.0. You are free to share (copy and redistribute\nthe material in any medium or format) and adapt (remix, transform, and\nbuild upon the material) for any purpose, even commercially. for any\npurpose, even commercially. The licensor cannot revoke these freedoms as\nlong as you follow the license terms. You must give appropriate credit\n(by using the original ontology IRI for the whole ontology and original\nterm IRIs for individual terms), provide a link to the license, and\nindicate if any changes were made. You may do so in any reasonable\nmanner, but not in any way that suggests the licensor endorses you or\nyour use."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/bpo#isComposedOfEntity
+<https://w3id.org/bpo#isComposedOfEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PreDeconstructionAuditor> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bpo#Product> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Designer> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bpo#Product> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Element> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Building> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/DecommissioingType> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasInterventionRequirement
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasInterventionRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasInterventionRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasInterventionRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasPersonnelRequirement
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasPersonnelRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasPersonnelRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasPersonnelRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bpo#Product> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bpo#Product> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bpo#Product> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bpo#Product> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bpo#Product> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSiteDependency
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSiteDependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSiteDependency> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSiteDependency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Manufacturer> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bpo#Product> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection> .
+# 
+# https://w3id.org/bot#hasElement
+<https://w3id.org/bot#hasElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/bot#hasElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
+<https://w3id.org/bot#hasElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Element> .
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial
+<https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.projekt-scope.de/ontologies/bpo/#Component> .
+<https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Element> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Building> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Building> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDesignLife
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDesignLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDesignLife> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Element> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Building> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDesignLife> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasEconomicLife
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasEconomicLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasEconomicLife> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Element> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Building> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasEconomicLife> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecyclingLevelOfQuality
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecyclingLevelOfQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecyclingLevelOfQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecyclingLevelOfQuality> <http://www.w3.org/2000/01/rdf-schema#range> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#oneOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "xsd:string Same" .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#oneOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "xsd:string Lower" .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasServiceLife
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasServiceLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasServiceLife> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Element> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Building> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasServiceLife> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification> <http://www.w3.org/2000/01/rdf-schema#label> "Certification"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection> <http://purl.org/dc/terms/description> "This type of connection is formed through chemical reactions between two components, resulting in an irreversible bond. For example, the use of adhesives such as epoxy.\n\nNote: The irreversibility of this bond can pose challenges in the future, such as difficulty in disassembling or repairing the structure, thus leading to the preference for alternative methods of connection that possess greater versatility and ease of manipulation. The ChemicalConnection, while a common method utilized in conventional construction practices, is not necessarily deemed an optimal choice due to its permanent nature."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical Connection"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Circular Potential"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> <http://www.w3.org/2000/01/rdf-schema#label> "Connection Type"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Demountable
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Demountable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Demountable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#EoLAction> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Designer
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Designer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Designer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Designer> <http://www.w3.org/2000/01/rdf-schema#label> "Designer"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection> <http://purl.org/dc/terms/description> "The Direct Connection refers to a type of connection where two components are in direct physical contact with each other, with their surfaces touching. An example of a Direct Connection in the context of construction products would be the use of interlocking joints.\n\nNote:The simplicity and directness of the Direct Connection make it a useful design choice in circualr construction projects, particularly in situations where a strong, stable connection is desired with minimal intervention."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Direct Connection"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Discard Potential"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#EoLAction
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#EoLAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#EoLAction> <http://www.w3.org/2000/01/rdf-schema#label> "End of Life Actionable" .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade> <http://www.w3.org/2000/01/rdf-schema#label> "Facade"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Functional Layer"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection> <http://purl.org/dc/terms/description> "Gravitational Connection is elaborated here based on the work of (Durmisevic, 2006).Gravitational Connection is introduced, but not thoroughly examined in DOR. Despite gravity's power to attract two objects, it is not widely utilized in construction projects. There is room for further elaboration and extension of this class. \n\nReference: Durmisevic, E., 2006. Transformable building structures : design for dissassembly as a way to introduce sustainable engineering to building design & construction (doctoral thesis). TUDelft."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Gravitational Connection"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Hazardous Material"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Indirect Connection"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection> <http://www.w3.org/2000/01/rdf-schema#label> "Inspection"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode> <http://www.w3.org/2000/01/rdf-schema#label> "Inspection Mode"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType> <http://www.w3.org/2000/01/rdf-schema#label> "Inspection Type"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Installation Type"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention> <http://www.w3.org/2000/01/rdf-schema#label> "Intervention"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics> <http://www.w3.org/2000/01/rdf-schema#label> "Logistics"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Maintenance
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Maintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Maintenance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Maintenance> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Manufacturer
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Material Bank Agent"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> <http://www.w3.org/2000/01/rdf-schema#label> "Material Source Type"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection> <http://purl.org/dc/terms/description> "Mechanical Connection refers to type of connections that are established through the application of mechanical forces such as shear or tension. In the context of construction products, an example of a Mechanical Connection would be the use of threaded fasteners, such as bolts and nuts, to secure two or more components together. \n\nNote: These connections, such as those created through the use of bolts, embody the ideal characteristics for circular design as they are capable of being easily reversed. The versatility offered by the reversibility of the MechanicalConnection makes it a highly desirable option in construction projects."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Connection"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#complementOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Non-hazardous Material"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#complementOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Non-renewable Material"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OffSite
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OffSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OffSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OffSite> <http://www.w3.org/2000/01/rdf-schema#label> "Off-site"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite> <http://www.w3.org/2000/01/rdf-schema#label> "On-site"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSiteReusePotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSiteReusePotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSiteReusePotential> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid41 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSiteDependency> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSiteReusePotential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Packaging
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Packaging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Packaging> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Packaging> <http://www.w3.org/2000/01/rdf-schema#label> "Packaging"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel> <http://www.w3.org/2000/01/rdf-schema#label> "Personnel"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PreDeconstructionAuditor
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PreDeconstructionAuditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PreDeconstructionAuditor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PreDeconstructionAuditor> <http://www.w3.org/2000/01/rdf-schema#label> "Pre-Deconstruction Auditor"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial> <http://purl.org/dc/terms/description> "Primary raw materials are the basic materials that are extracted from the planet and used as inputs for industrial production. They are not processed or altered and are used in the first life cycle stage in the creation of a finished product. An example of a primary raw material used in the construction industry is iron ore, which is extracted from the earth and used to produce steel."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Raw Material"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Recyclable Material"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential> <http://purl.org/dc/terms/description> "When an item can no longer be reused, remanufactured, or repaired, it can be recycled if the material is inherently recyclable. This results in the item having \"RecyclingPotential.\" For an assembly made with multiple materials to have RecyclingPotential, each material must be recyclable."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Recycling Potential"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Remanufacturing Potential"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Renewable Material"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Repair
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Repair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Repair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Repair> <http://www.w3.org/2000/01/rdf-schema#label> "Repair"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Replace
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Replace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Replace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Replace> <http://www.w3.org/2000/01/rdf-schema#label> "Replace"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Repurposing"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential> <http://www.w3.org/2000/01/rdf-schema#label> "Reuse Potential"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection> <http://www.w3.org/2000/01/rdf-schema#label> "Reversible Connection"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency> <http://www.w3.org/2000/01/rdf-schema#label> "Site Dependency"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan> <http://www.w3.org/2000/01/rdf-schema#label> "Space Plan"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure> <http://www.w3.org/2000/01/rdf-schema#label> "Structure"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel> <http://www.w3.org/2000/01/rdf-schema#label> "Trainned Personnel"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Transportation
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Transportation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Transportation> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel> <http://www.w3.org/2000/01/rdf-schema#label> "Untrainned Personnel"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#WasteAuditor
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#WasteAuditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#WasteAuditor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#WasteAuditor> <http://www.w3.org/2000/01/rdf-schema#label> "Waste Auditor"@en .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/DecommissioingType
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/DecommissioingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/DecommissioingType> <http://purl.org/dc/terms/description> "Decommissioning Type for a building refers to the type of process of retiring a building or a structure from active service. The decommissioning process can vary depending on the building typology, age or the purpose for which it was used. For example, Demolition is a Decommissioing Type."@en .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/DecommissioingType> <http://www.w3.org/2000/01/rdf-schema#label> "Decommissioning Type"@en .
+# 
+# https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
+# 
+# https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Element> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.projekt-scope.de/ontologies/bpo/#Component> .
+# 
+# https://w3id.org/bpo#Assembly
+<https://w3id.org/bpo#Assembly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bpo#Assembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.projekt-scope.de/ontologies/bpo/#Component> .
+# 
+# https://w3id.org/bpo#Product
+<https://w3id.org/bpo#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bpo#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.projekt-scope.de/ontologies/bpo/#Component> .
+# 
+# https://w3id.org/bpo#SingularEntity
+<https://w3id.org/bpo#SingularEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/digitalconstruction/0.5/Materials#Material
+<https://w3id.org/digitalconstruction/0.5/Materials#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.projekt-scope.de/ontologies/bpo/#Component
+<https://www.projekt-scope.de/ontologies/bpo/#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection
+<https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#BackPlate_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#BackPlate_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#BackPlate_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bpo#SingularEntity> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Element_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Element_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Element_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bot#Element> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bot#Element> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bpo#Assembly> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1> <https://w3id.org/bpo#isComposedOfEntity> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1> <https://w3id.org/bpo#isComposedOfEntity> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1> <https://w3id.org/bpo#isComposedOfEntity> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection_FloorSystem_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection_FloorSystem_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection_FloorSystem_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Recycle_Potential_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Recycle_Potential_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Recycle_Potential_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Reuse_Potential_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Reuse_Potential_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Reuse_Potential_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Reuse_Potential_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid45 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSiteDependency> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bpo#SingularEntity> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Recycle_Potential_1> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1> <https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade2> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bpo#SingularEntity> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Reuse_Potential_1> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1> <https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade2> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade2
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/digitalconstruction/0.5/Materials#Material> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade2> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bpo#SingularEntity> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1> <https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade1> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#building_A
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#building_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#building_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/bot#Building> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#building_A> <https://w3id.org/bot#hasElement> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#building_A> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate> "2001-10-26T21:32:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#building_A> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate> "2031-10-26T21:32:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#steel_Grade3
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#steel_Grade3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#steel_Grade3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Secondary Raw Material"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
