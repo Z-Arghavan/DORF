@@ -1,0 +1,2572 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/omg", "https://w3id.org/seas/", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/opm", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "https://www.projekt-scope.de/ontologies/bpo/", "https://w3id.org/bpo", "http://xmlns.com/foaf/0.1", "https://w3id.org/seas", "https://w3id.org/digitalconstruction/0.5/Materials" ],
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "description" : {
+      "en" : "This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. \n\nThis ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. \n\nAdditionally, DOR ontology would supports the processes involved in depositing reclaimed materials in a material bank,digital disgnosis, the conditions for acceptance of a material bank for second life cycle reuse, and the documentation required to ensure proper tracking and accounting of the materials in the construction industry.."
+    },
+    "comments" : {
+      "en" : "&quot;DOR&quot; by developer groups is\nlicensed under CC BY 4.0. You are free to share (copy and redistribute\nthe material in any medium or format) and adapt (remix, transform, and\nbuild upon the material) for any purpose, even commercially. for any\npurpose, even commercially. The licensor cannot revoke these freedoms as\nlong as you follow the license terms. You must give appropriate credit\n(by using the original ontology IRI for the whole ontology and original\nterm IRIs for individual terms), provide a link to the license, and\nindicate if any changes were made. You may do so in any reasonable\nmanner, but not in any way that suggests the licensor endorses you or\nyour use."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "en",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:complementOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "107",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "109",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "115",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:complementOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Facade",
+      "en" : "Facade"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intervention",
+      "en" : "Intervention"
+    },
+    "subClasses" : [ "7", "8", "9" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "description" : {
+      "en" : "The Direct Connection refers to a type of connection where two components are in direct physical contact with each other, with their surfaces touching. An example of a Direct Connection in the context of construction products would be the use of interlocking joints.\n\nNote:The simplicity and directness of the Direct Connection make it a useful design choice in circualr construction projects, particularly in situations where a strong, stable connection is desired with minimal intervention."
+    },
+    "label" : {
+      "IRI-based" : "DirectConnection",
+      "en" : "Direct Connection"
+    },
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/omg#GeometryState",
+    "baseIri" : "https://w3id.org/omg",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/opm#PropertyState",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Geometriestatus",
+      "IRI-based" : "GeometryState",
+      "en" : "Geometry state"
+    },
+    "subClasses" : [ "22" ],
+    "comment" : {
+      "en" : "A geometry state is an evaluation holding the geometry description and metadata about a geometry that was true for the given time. \r\nIn case of geometry states, changing geometric properties does not cause the need for a new geometry state as long as the property was changed using the OPM concepts. If this is not the case, a copy of the now valid graph must be created and attached to a new geometry state. If an object within the geometry graph is changed (e.g. changing the primitive \"Box\" into a primitive \"Sphere\"), the old primitive (\"Box\") should be classified as opm:Deleted and the new primitive (\"Sphere\") should be added to the geometry graph in the correct place. The new geometry state should then be connected to any object of the geometry graph that is not opm:Deleted using the omg:containsGeometryObject relation.\r\nMetadata of a geometry state must as a minimum be the time of generation stated by prov:generatedAtTime, but preferably also a prov:wasAttributedTo reference to the agent who created the state. In case properties are changed using the OPM concepts, the most current time of generation and agent who created the state will be determined using the omg:containsPropertyState relation.\r\nDerived geometry descriptions are also stored as states as these change when the base geometry changes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/omg#Geometry",
+    "baseIri" : "https://w3id.org/omg",
+    "instances" : 0,
+    "label" : {
+      "de" : "Geometrie",
+      "IRI-based" : "Geometry",
+      "en" : "Geometry"
+    },
+    "comment" : {
+      "en" : "Abstract node for geometry that should not contain geometry descriptions (neither RDF-based or text-based). This node can be used to attach additional information to the information as author, time of creation, geometry context or dependencies with other geometry descriptions as transformations, complementations or derivations. By creating subclasses of this class for specific types of geometry descriptions (e.g. OBJ, GEOM, glTF), more informational value can be added and used in querying for specific geometry description formats."
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonHazardousMaterial",
+      "en" : "Non-hazardous Material"
+    },
+    "attributes" : [ "complement" ],
+    "id" : "29",
+    "complement" : [ "31" ],
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Manufacturer",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "id" : "24",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Repair",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Repair",
+      "en" : "Repair"
+    },
+    "id" : "9",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/bpo#SingularEntity",
+    "baseIri" : "https://w3id.org/bpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingularEntity"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "ShearConnector_Recyclable_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "ShearConnector_Reusable_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "bolt_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#BackPlate_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "BackPlate_1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConnectionType",
+      "en" : "Connection Type"
+    },
+    "subClasses" : [ "42", "43", "16", "44", "45", "46", "47" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Exposure",
+      "en" : "Exposure"
+    },
+    "id" : "48",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Personnel",
+      "en" : "Personnel"
+    },
+    "subClasses" : [ "50", "51" ],
+    "id" : "49",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PreDeconstructionAuditor",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreDeconstructionAuditor",
+      "en" : "Pre-Deconstruction Auditor"
+    },
+    "id" : "52",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Building",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building",
+      "en" : "Building"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#building_A",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "building_A"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainedPersonnel",
+      "en" : "Trainned Personnel"
+    },
+    "id" : "51",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialBankAgent",
+      "en" : "Material Bank Agent"
+    },
+    "id" : "54",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Transportation",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transportation",
+      "en" : "Transportation"
+    },
+    "id" : "62",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Replace",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Replace",
+      "en" : "Replace"
+    },
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecondaryRawMaterial",
+      "en" : "Secondary Raw Material"
+    },
+    "id" : "72",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "description" : {
+      "en" : "Mechanical Connection refers to type of connections that are established through the application of mechanical forces such as shear or tension. In the context of construction products, an example of a Mechanical Connection would be the use of threaded fasteners, such as bolts and nuts, to secure two or more components together. \n\nNote: These connections, such as those created through the use of bolts, embody the ideal characteristics for circular design as they are capable of being easily reversed. The versatility offered by the reversibility of the MechanicalConnection makes it a highly desirable option in construction projects."
+    },
+    "label" : {
+      "IRI-based" : "MechanicalConnection",
+      "en" : "Mechanical Connection"
+    },
+    "id" : "45",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CircularPotential",
+      "en" : "Circular Potential"
+    },
+    "subClasses" : [ "74", "75", "76", "77", "78", "79" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "description" : {
+      "en" : "This type of connection is formed through chemical reactions between two components, resulting in an irreversible bond. For example, the use of adhesives such as epoxy.\n\nNote: The irreversibility of this bond can pose challenges in the future, such as difficulty in disassembling or repairing the structure, thus leading to the preference for alternative methods of connection that possess greater versatility and ease of manipulation. The ChemicalConnection, while a common method utilized in conventional construction practices, is not necessarily deemed an optimal choice due to its permanent nature."
+    },
+    "label" : {
+      "IRI-based" : "ChemicalConnection",
+      "en" : "Chemical Connection"
+    },
+    "id" : "42",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemanufacturingPotential",
+      "en" : "Remanufacturing Potential"
+    },
+    "id" : "79",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection",
+    "baseIri" : "https://www.projekt-scope.de/ontologies/bpo/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComponentConnection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/seas/#Property",
+    "baseIri" : "https://w3id.org/seas/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "attributes" : [ "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HazardousMaterial",
+      "en" : "Hazardous Material"
+    },
+    "id" : "31",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inspection",
+      "en" : "Inspection"
+    },
+    "subClasses" : [ "83", "37" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RepurposingPotential",
+      "en" : "Repurposing"
+    },
+    "id" : "74",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SiteDependency",
+      "en" : "Site Dependency"
+    },
+    "subClasses" : [ "96", "97" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "99",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/bpo#Product",
+    "baseIri" : "https://w3id.org/bpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "description" : {
+      "en" : "Primary raw materials are the basic materials that are extracted from the planet and used as inputs for industrial production. They are not processed or altered and are used in the first life cycle stage in the creation of a finished product. An example of a primary raw material used in the construction industry is iron ore, which is extracted from the earth and used to produce steel."
+    },
+    "label" : {
+      "IRI-based" : "PrimaryRawMaterial",
+      "en" : "Primary Raw Material"
+    },
+    "id" : "100",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialSourceType",
+      "en" : "Material Source Type"
+    },
+    "subClasses" : [ "104", "87", "100", "72", "31", "105", "29" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "106",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "107",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/digitalconstruction/0.5/Materials#Material",
+    "baseIri" : "https://w3id.org/digitalconstruction/0.5/Materials",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "Steel_Grade1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Steel_Grade2",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "Steel_Grade2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "110", "27", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://w3id.org/opm#PropertyState",
+    "baseIri" : "https://w3id.org/opm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyState"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnSite",
+      "en" : "On-site"
+    },
+    "id" : "96",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/omg#GeometryContext",
+    "baseIri" : "https://w3id.org/omg",
+    "instances" : 0,
+    "label" : {
+      "de" : "Geometriekontext",
+      "IRI-based" : "GeometryContext",
+      "en" : "Geometry context"
+    },
+    "comment" : {
+      "en" : "Context of one (or multiple) geometry descriptions. A context can help extracting relevant geometry descriptions by connecting those to a specific shared context. Geometric contexts can be views of planners, planning stages (versions), or individually created contexts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/DecommissioingType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "description" : {
+      "en" : "Decommissioning Type for a building refers to the type of process of retiring a building or a structure from active service. The decommissioning process can vary depending on the building typology, age or the purpose for which it was used. For example, Demolition is a Decommissioing Type."
+    },
+    "label" : {
+      "IRI-based" : "DecommissioingType",
+      "en" : "Decommissioning Type"
+    },
+    "attributes" : [ "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "110", "27", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "102"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "110", "27", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "110", "27", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "36", "14", "110", "4" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "119"
+  }, {
+    "instances" : 0,
+    "union" : [ "20", "95" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "11"
+  }, {
+    "instances" : 0,
+    "union" : [ "90", "70" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "description" : {
+      "en" : "When an item can no longer be reused, remanufactured, or repaired, it can be recycled if the material is inherently recyclable. This results in the item having \"RecyclingPotential.\" For an assembly made with multiple materials to have RecyclingPotential, each material must be recyclable."
+    },
+    "label" : {
+      "IRI-based" : "RecyclingPotential",
+      "en" : "Recycling Potential"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Recycle_Potential_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "Recycle_Potential_1"
+      }
+    } ],
+    "id" : "75",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IrreversibleConnection"
+    },
+    "id" : "46",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#WasteAuditor",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WasteAuditor",
+      "en" : "Waste Auditor"
+    },
+    "id" : "123",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Demountable",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Demountable"
+    },
+    "id" : "124",
+    "superClasses" : [ "125" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalLayer",
+      "en" : "Functional Layer"
+    },
+    "subClasses" : [ "3", "131", "132" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableMaterial",
+      "en" : "Recyclable Material"
+    },
+    "id" : "87",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Maintenance",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Maintenance",
+      "en" : "Maintenance"
+    },
+    "id" : "8",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CircularRequirement"
+    },
+    "subClasses" : [ "49", "48", "63", "139", "5" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReversibleConnection",
+      "en" : "Reversible Connection"
+    },
+    "id" : "47",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://www.projekt-scope.de/ontologies/bpo/#Component",
+    "equivalent" : [ "110" ],
+    "baseIri" : "https://www.projekt-scope.de/ontologies/bpo/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component"
+    },
+    "subClasses" : [ "142", "36" ],
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InspectionMode",
+      "en" : "Inspection Mode"
+    },
+    "id" : "83",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Logistics",
+      "en" : "Logistics"
+    },
+    "subClasses" : [ "62", "149" ],
+    "id" : "63",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "93",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Packaging",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Packaging",
+      "en" : "Packaging"
+    },
+    "id" : "149",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Structure",
+      "en" : "Structure"
+    },
+    "id" : "131",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OffSite",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OffSite",
+      "en" : "Off-site"
+    },
+    "id" : "97",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InstallationConnection",
+      "en" : "Installation Type"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection_FloorSystem_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "InstallationConnection_FloorSystem_1"
+      }
+    } ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Designer",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Designer",
+      "en" : "Designer"
+    },
+    "id" : "19",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UntrainedPersonnel",
+      "en" : "Untrainned Personnel"
+    },
+    "id" : "50",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "https://w3id.org/bpo#Assembly",
+    "baseIri" : "https://w3id.org/bpo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assembly"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "annotations" : {
+        "isComposedOfEntity" : [ {
+          "identifier" : "isComposedOfEntity",
+          "language" : "undefined",
+          "value" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOfEntity",
+          "language" : "undefined",
+          "value" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOfEntity",
+          "language" : "undefined",
+          "value" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FloorSystem_1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "142",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiscardPotential",
+      "en" : "Discard Potential"
+    },
+    "id" : "77",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSiteReusePotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnSiteReusePotential"
+    },
+    "intersection" : [ "76" ],
+    "attributes" : [ "intersection" ],
+    "id" : "78",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonRenewableMaterial",
+      "en" : "Non-renewable Material"
+    },
+    "attributes" : [ "complement" ],
+    "id" : "105",
+    "complement" : [ "104" ],
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actor"
+    },
+    "subClasses" : [ "54", "52", "19", "24", "123" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#EoLAction",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EoLAction",
+      "undefined" : "End of Life Actionable"
+    },
+    "subClasses" : [ "124" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndirectConnection",
+      "en" : "Indirect Connection"
+    },
+    "id" : "44",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InspectionType",
+      "en" : "Inspection Type"
+    },
+    "id" : "37",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RenewableMaterial",
+      "en" : "Renewable Material"
+    },
+    "id" : "104",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Certification",
+      "en" : "Certification"
+    },
+    "id" : "139",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/omg#CurrentGeometryState",
+    "baseIri" : "https://w3id.org/omg",
+    "instances" : 0,
+    "label" : {
+      "de" : "Aktueller Geometrie Status",
+      "IRI-based" : "CurrentGeometryState",
+      "en" : "Current geometry state"
+    },
+    "comment" : {
+      "en" : "A current geometry state classifies the most current - and thereby valid - geometry state. Which state is most current will be defined by the added timestamp using the prov:generatedAtTime relation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReusePotential",
+      "en" : "Reuse Potential"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Reuse_Potential_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "Reuse_Potential_1"
+      }
+    } ],
+    "id" : "76",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "description" : {
+      "en" : "Gravitational Connection is elaborated here based on the work of (Durmisevic, 2006).Gravitational Connection is introduced, but not thoroughly examined in DOR. Despite gravity's power to attract two objects, it is not widely utilized in construction projects. There is room for further elaboration and extension of this class. \n\nReference: Durmisevic, E., 2006. Transformable building structures?: design for dissassembly as a way to introduce sustainable engineering to building design & construction (doctoral thesis). TUDelft."
+    },
+    "label" : {
+      "IRI-based" : "GravitationalConnection",
+      "en" : "Gravitational Connection"
+    },
+    "id" : "43",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "equivalent" : [ "26" ],
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Element"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Element_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "labels" : {
+        "IRI-based" : "Element_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FloorSystem_1",
+      "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+      "annotations" : {
+        "isComposedOfEntity" : [ {
+          "identifier" : "isComposedOfEntity",
+          "language" : "undefined",
+          "value" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Reusable_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOfEntity",
+          "language" : "undefined",
+          "value" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ShearConnector_Recyclable_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOfEntity",
+          "language" : "undefined",
+          "value" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#bolt_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FloorSystem_1"
+      }
+    } ],
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpacePlan",
+      "en" : "Space Plan"
+    },
+    "id" : "132",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/omg#hasSimpleGeometryDescription",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "2",
+    "annotations" : {
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#GeometryState",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#Geometry",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSimpleGeometryDescription",
+      "en" : "has simple geometry description"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Datatype property to connect a simple (non RDF-based), text-based or file-based geometry description to an object, geometry or geometry state. In case the geometry description is text-based or in a binary file format, it can be directly added to this property, if it is a file-based geometry description, the URI linking to the file should be added to this property. Should multiple geometries be added to the object, the omg:Geometry class with its relation (omg:hasGeometry) or even geometry states (omg:GeometryState and omg:hasGeometryState) should be introduced for each geometry resp. geometry version."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSiteDependency",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasSiteDependency"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasDecommissioningDate"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "designsFor"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "producesFor"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial",
+    "baseIri" : "https://w3id.org/digitalconstruction/0.5/Materials",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasMaterial"
+    },
+    "domain" : "26",
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasInterventionRequirement",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasInterventionRequirement"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasCircularRequirement"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasRequiredInspectionType"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasConnectionType"
+    },
+    "domain" : "41",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "auditsFor"
+    },
+    "domain" : "52",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasDerivedFrom"
+    },
+    "domain" : "1",
+    "subproperty" : [ "56", "57", "58", "59", "60", "61" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRequiredInspection"
+    },
+    "domain" : "1",
+    "subproperty" : [ "35", "64" ],
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/omg#containsPropertyState",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "containsPropertyState",
+      "en" : "contains property state"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Relation between a geometry state and a relevant property state. Any property that belongs to the geometry state's related geometry objects (using the omg:containsGeometryObject relation) can be a host for relevant property states. \r\nThis relation can be inferred, as long as the connection to the geometry object (omg:containsGeometryObject), its properties (seas:hasProperty) and the considered property state (opm:hasPropertyState) are modelled correctly."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasWasteCode"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo",
+    "inverse" : "71",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "connectionTo"
+    },
+    "domain" : "70",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasSourceType"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/omg#isDerivedFromGeometryState",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isDerivedFromGeometryState",
+      "en" : "is derived from geometry state"
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "Relation between two geometry states where the first (domain) has been converted from the second (range). A geometry state can only be converted from one other geometry state."
+    },
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasCircularPotential"
+    },
+    "domain" : "81",
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasRecommendedInspectionMode"
+    },
+    "superproperty" : [ "84" ],
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasRecommendedInspectionType"
+    },
+    "superproperty" : [ "84" ],
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecyclingLevelOfQuality",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasRecyclingLevelOfQuality"
+    },
+    "domain" : "87",
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasPersonnelRequirement",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasPersonnelRequirement"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/omg#hasGeometryContext",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "94",
+    "annotations" : {
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#Geometry",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#GeometryState",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometryContext",
+      "en" : "has geometry context"
+    },
+    "domain" : "93",
+    "comment" : {
+      "en" : "Relation between a geometry or geometry state and its geometric context. A singular geometry may have multiple contexts, just as one context can be used for different geometries (of different objects)"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/seas/hasProperty",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasProperty"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDesignLife",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "hasDesignLife"
+    },
+    "domain" : "102",
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/omg#hasReferencedGeometryId",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasReferencedGeometryId",
+      "en" : "has referenced geometry identifier"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Property to add an identifier to a referencing geometry that can be used to identify the referencing geometry in its origin's complete geometry descritpion."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/omg#isPartOfGeometry",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isPartOfGeometry",
+      "en" : "is part of geometry "
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "Relation between a referencing geometry and its origin geometry. The origin geometry contains a large geometry description, including the reference geometry's description. The reference geometry contains only its identifier within its origin geometry description."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "61"
+  }, {
+    "range" : "17",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "17",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "17",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "hasRecommendedInspection"
+    },
+    "domain" : "36",
+    "subproperty" : [ "82", "85" ],
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "range" : "17",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "17",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "17",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://w3id.org/omg#hasGeometry",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasGeometry",
+      "en" : "has geometry"
+    },
+    "domain" : "99",
+    "comment" : {
+      "en" : "Relation between any object and its geometric representation. An object may have multiple geometric representations, while one geometric represenation may always just be connected to one object (inverse functional)."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "133"
+  }, {
+    "range" : "21",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "4",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "4",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "30",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://w3id.org/omg#hasInferredPropertyState",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "1",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/opm#hasPropertyState",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInferredPropertyState",
+      "en" : "has inferred property state"
+    },
+    "superproperty" : [ "141" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relation between a property and its property state that has been inferred from the omg:isExplicitlyDerivedFrom relation. This relation will be inferred by the a chain axiom for every property that is derived from another (geometric) property (using omg:isExplicitlyDerivedFrom) which in turn has its own property state connected with the opm:hasPropertyState relation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "140"
+  }, {
+    "range" : "30",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "30",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "30",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "30",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "30",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "5",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasEconomicLife",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "hasEconomicLife"
+    },
+    "domain" : "115",
+    "attributes" : [ "datatype" ],
+    "id" : "152"
+  }, {
+    "range" : "34",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "34",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "34",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "34",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "34",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasRequiredInspectionMode"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/opm#hasPropertyState",
+    "baseIri" : "https://w3id.org/opm",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPropertyState"
+    },
+    "domain" : "1",
+    "subproperty" : [ "140" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasServiceLife",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "hasServiceLife"
+    },
+    "domain" : "109",
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  }, {
+    "range" : "20",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "20",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "hasCircularPotentialIndicator"
+    },
+    "domain" : "117",
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "range" : "20",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "20",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "20",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "20",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "26",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "26",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "63",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "63",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "https://w3id.org/omg#hasGeometryState",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "21",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/opm#hasPropertyState",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometryState",
+      "en" : "has geometry state"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Relation between a geometry and one of its geometry states. For each revision in an RDF-based geometry descriptions where changes were made to the graph nodes and not the properties, a new state must be defined to capture the new graph. This property is inverse functional as one geometry state can only belong to one geometry."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "hasConstructionDate"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://w3id.org/omg#isExplicitlyDerivedFrom",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "isExplicitlyDerivedFrom",
+      "en" : "is explicitly derived from"
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "91",
+    "comment" : {
+      "en" : "Relation between two properties, where the first property is explicitly derived from the other. This means that the first property will always have the same value as the second. Cases where this relation can be used are if an object's geometry is modelled RDF-based and contains a property defining e.g. the height of the object. Then the non-geometric property for height should be explicitly derived from the geometric property to ensure data integrity."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningType",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "hasDecommissioningType"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "172"
+  }, {
+    "range" : "49",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "49",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasConnection"
+    },
+    "domain" : "36",
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "range" : "6",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "6",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "6",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "6",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "recertifiesFor"
+    },
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://w3id.org/omg#complementsGeometry",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "complementsGeometry",
+      "en" : "complements geometry"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Relation between one geometry and another that is composed by the first. E.g. a point cloud of a columns laser scan in a high geometric detail complementing a simplified CSG geometry of the same column. Both geometry descriptions are closely related, but not directly derived from each other. The complementing geometry description may also just depict a small part of the entire geometry (e.g. the column header)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://w3id.org/omg#containsGeometryObject",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "containsGeometryObject",
+      "en" : "contains geometry object"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Relation between a geometry state and any object (node) of the related RDF-based geometry description that is relevant for this specific geometry state (not including deleted objects)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "182"
+  }, {
+    "range" : "37",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "104",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "72",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer",
+    "baseIri" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasFunctionalLayer"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "186"
+  }, {
+    "iri" : "https://w3id.org/omg#transformsGeometry",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "transformsGeometry",
+      "en" : "transforms geometry"
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "Relation between one geometry and another one, where the first is a transformation of the second. This might be used when placing multiple objects of the same type and geometry within the same graph (e.g. multiple chairs into a building model). The first geometry will only consist of a transformation or tanslation matrix."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "60"
+  }, {
+    "range" : "91",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "94",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "21",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "21",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "66",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://w3id.org/omg#isImplicitlyDerivedFrom",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isImplicitlyDerivedFrom",
+      "en" : "is implicitly derived from"
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "91",
+    "comment" : {
+      "en" : "Relation between a property and a geometry, where the property is implicitly derived from the geometry (e.g. properties for volumes or areas). This relation can be used to find inconsistencies, e.g. if the property has been changed while the geometry has not and vice versa."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "57"
+  }, {
+    "range" : "44",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "29",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://w3id.org/bot#hasElement",
+    "baseIri" : "https://w3id.org/bot",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "hasElement"
+    },
+    "domain" : "14",
+    "attributes" : [ "object", "external" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://w3id.org/omg#hasComplexGeometryDescription",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "1",
+    "annotations" : {
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#GeometryState",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#Geometry",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasComplexGeometryDescription",
+      "en" : "has complex geometry description"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relation between an object, a geometry, or a geometry state and its RDF-based geometry description. If more than one geometry description should be added to an object, the relation omg:hasGeometry to a new individual of the type omg:Geometry should be used for each geometry description. This step is necessary to allow interconnections between the geometry descriptions regarding their derivation or complementation for easier upkeep of data integrity. The introduction of subproperties of this property for specific geometry descriptions (e.g. OntoBREP, GEOM, OntoSTEP) may ease querying for wanted geometry description formats."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://w3id.org/omg#isDerivedFromGeometry",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isDerivedFromGeometry",
+      "en" : "is derived from geometry"
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "Relation between two geometry descriptions where the first geometry can be derived from the second. It is possible for a geometry to be derived from multiple sources, as well as to model a bi-directional derivation between two geometries by using this relation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "range" : "12",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "95",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "125",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "12",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "95",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  } ]
+}
