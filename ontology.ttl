@@ -13,8 +13,8 @@
 This ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. 
 
 Additionally, DOR ontology would supports the processes involved in depositing reclaimed materials in a material bank,digital disgnosis, the conditions for acceptance of a material bank for second life cycle reuse, and the documentation required to ensure proper tracking and accounting of the materials in the construction industry.."""@en ;
-                                                          <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/"@en ,
-                                                                                             """\"DOR\" by \"Arghavan Akbarieh\" developer groups is
+                                                          <http://purl.org/dc/terms/license> """http://creativecommons.org/licenses/by/4.0/
+\"DOR\" by \"Arghavan Akbarieh\" developer groups is
 licensed under CC BY 4.0. You are free to share (copy and redistribute
 the material in any medium or format) and adapt (remix, transform, and
 build upon the material) for any purpose, even commercially. for any
@@ -26,9 +26,14 @@ indicate if any changes were made. You may do so in any reasonable
 manner, but not in any way that suggests the licensor endorses you or
 your use.
 \"DOR\"by Arghavan Akbarieh is licensed
-under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).""" ;
-                                                          rdfs:comment ""@en ,
-                                                                       """\"DOR\"by Arghavan Akbarieh is licensed
+under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en ;
+                                                          rdfs:comment """This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. 
+
+This ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. 
+
+Additionally, DOR ontology would supports the processes involved in depositing reclaimed materials in a material bank,digital disgnosis, the conditions for acceptance of a material bank for second life cycle reuse, and the documentation required to ensure proper tracking and accounting of the materials in the construction industry..
+
+\"DOR\"by Arghavan Akbarieh is licensed
 under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
 
 #################################################################
@@ -55,7 +60,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
 :auditsFor rdf:type owl:ObjectProperty ;
            rdfs:domain :PreDeconstructionAuditor ;
            rdfs:range :CircularPotential ;
-           <http://purl.org/dc/terms/description> "The action that an Auditor carries out." ;
+           rdfs:comment "The action that an Auditor carries out." ;
            rdfs:label "Audits For" .
 
 
@@ -71,7 +76,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
 :designsFor rdf:type owl:ObjectProperty ;
             rdfs:domain :Designer ;
             rdfs:range :CircularPotential ;
-            <http://purl.org/dc/terms/description> "The action that a Designer carries out. A designer can design a component for a ceratin circular potential." ;
+            rdfs:comment "The action that a Designer carries out. A designer can design a component for a ceratin circular potential." ;
             rdfs:label "Designs For" .
 
 
@@ -84,7 +89,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
                                                 )
                                   ] ;
                       rdfs:range :CircularPotential ;
-                      <http://purl.org/dc/terms/description> "Any Building or Functional Layer or Component has a circular potential. This object property links the circular potential to the designated item." ;
+                      rdfs:comment "Any Building or Functional Layer or Component has a circular potential. This object property links the circular potential to the designated item." ;
                       rdfs:label "has Circular Potential"@en .
 
 
@@ -92,7 +97,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
 :hasCircularRequirement rdf:type owl:ObjectProperty ;
                         rdfs:domain :CircularPotential ;
                         rdfs:range :CircularRequirement ;
-                        <http://purl.org/dc/terms/description> "This object property connects the requirements necessary for realising a circular potential and the designated circular potential." ;
+                        rdfs:comment "This object property connects the requirements necessary for realising a circular potential and the designated circular potential." ;
                         rdfs:label "has Circular Requirement"@en .
 
 
@@ -105,7 +110,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
                                              )
                                ] ;
                    rdfs:range :ConnectionType ;
-                   <http://purl.org/dc/terms/description> "This object property elaborates the type of connection a \"Component Connection\" or \"Installation Connection\" has." ;
+                   rdfs:comment "This object property elaborates the type of connection a \"Component Connection\" or \"Installation Connection\" has." ;
                    rdfs:label "has Connection Type"@en .
 
 
@@ -113,7 +118,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
 :hasFunctionalLayer rdf:type owl:ObjectProperty ;
                     rdfs:domain <https://w3id.org/bot#Building> ;
                     rdfs:range :FunctionalLayer ;
-                    <http://purl.org/dc/terms/description> """Object Property between a Building and a Functional layer belongs to that building. 
+                    rdfs:comment """Object Property between a Building and a Functional layer belongs to that building. 
 A Building has different fucntional layers.""" ;
                     rdfs:label "has Functional Layer"@en .
 
@@ -121,7 +126,7 @@ A Building has different fucntional layers.""" ;
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection
 :hasRecommendedInspection rdf:type owl:ObjectProperty ;
                           rdfs:domain <https://www.projekt-scope.de/ontologies/bpo/#Component> ;
-                          <http://purl.org/dc/terms/description> "Property between a Component and an Inspection for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
+                          rdfs:comment "Property between a Component and an Inspection for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
                           rdfs:label "has Recommended Inspection" .
 
 
@@ -130,7 +135,7 @@ A Building has different fucntional layers.""" ;
                                 rdfs:subPropertyOf :hasRecommendedInspection ;
                                 rdfs:domain <https://www.projekt-scope.de/ontologies/bpo/#Component> ;
                                 rdfs:range :Inspection_Method ;
-                                <http://purl.org/dc/terms/description> "Property between a Component and an Inspection Method for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
+                                rdfs:comment "Property between a Component and an Inspection Method for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
                                 rdfs:label "has Recommended Inspection Method" .
 
 
@@ -139,14 +144,14 @@ A Building has different fucntional layers.""" ;
                               rdfs:subPropertyOf :hasRecommendedInspection ;
                               rdfs:domain <https://www.projekt-scope.de/ontologies/bpo/#Component> ;
                               rdfs:range :InspectionMode ;
-                              <http://purl.org/dc/terms/description> "Property between a Component and an Inspection Mode for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
+                              rdfs:comment "Property between a Component and an Inspection Mode for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
                               rdfs:label "has Recommended Inspection Mode" .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection
 :hasRequiredInspection rdf:type owl:ObjectProperty ;
                        rdfs:domain <https://www.projekt-scope.de/ontologies/bpo/#Component> ;
-                       <http://purl.org/dc/terms/description> "Property between a Component and an Inspection for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
+                       rdfs:comment "Property between a Component and an Inspection for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
                        rdfs:label "has Required Inspection" .
 
 
@@ -155,7 +160,7 @@ A Building has different fucntional layers.""" ;
                              rdfs:subPropertyOf :hasRequiredInspection ;
                              rdfs:domain <https://www.projekt-scope.de/ontologies/bpo/#Component> ;
                              rdfs:range :Inspection_Method ;
-                             <http://purl.org/dc/terms/description> "Property between a Component and an Inspection Method for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
+                             rdfs:comment "Property between a Component and an Inspection Method for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
                              rdfs:label "has Required Inspection Method" .
 
 
@@ -164,7 +169,7 @@ A Building has different fucntional layers.""" ;
                            rdfs:subPropertyOf :hasRequiredInspection ;
                            rdfs:domain <https://www.projekt-scope.de/ontologies/bpo/#Component> ;
                            rdfs:range :InspectionMode ;
-                           <http://purl.org/dc/terms/description> "Property between a Component and an Inspection Mode for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
+                           rdfs:comment "Property between a Component and an Inspection Mode for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse." ;
                            rdfs:label "has Required Inspection Mode" .
 
 
@@ -173,7 +178,7 @@ A Building has different fucntional layers.""" ;
                         owl:AsymmetricProperty ;
                rdfs:domain <https://w3id.org/digitalconstruction/0.3/BuildingMaterials#Material> ;
                rdfs:range :MaterialSourceType ;
-               <http://purl.org/dc/terms/description> """The \"has Source Type\" object property is used to specify the source type of a material. DICM:Material is its domain and its range  is Material Source Type.
+               rdfs:comment """The \"has Source Type\" object property is used to specify the source type of a material. DICM:Material is its domain and its range  is Material Source Type.
 By using the \"has Source Type\" property, one can associate a material with a specific source type, such as \"hazardous material,\" \"non-hazardous material,\" \"non-renewable material,\" \"primary raw material,\" \"recyclable material,\" or \"renewable material\" in order to capture information about the origin or nature of a material, allowing for more detailed analysis and reasoning about materials in post-consumer phase.""" ;
                rdfs:label "has Source Type"@en .
 
@@ -182,7 +187,7 @@ By using the \"has Source Type\" property, one can associate a material with a s
 :producesFor rdf:type owl:ObjectProperty ;
              rdfs:domain :Manufacturer ;
              rdfs:range :CircularPotential ;
-             <http://purl.org/dc/terms/description> "The action that a Producer or Manufacturer carries out. A producer or manufacturer can produces a component for a ceratin circular potential." ;
+             rdfs:comment "The action that a Producer or Manufacturer carries out. A producer or manufacturer can produces a component for a ceratin circular potential." ;
              rdfs:label "Produces For" .
 
 
@@ -190,7 +195,7 @@ By using the \"has Source Type\" property, one can associate a material with a s
 :recertifiesFor rdf:type owl:ObjectProperty ;
                 rdfs:domain :MaterialBankAgent ;
                 rdfs:range :CircularPotential ;
-                <http://purl.org/dc/terms/description> "The action that a Material Bank carries out. A material bank agent or entity can recertify components after assessment to have a certain circular potential." ;
+                rdfs:comment "The action that a Material Bank carries out. A material bank agent or entity can recertify components after assessment to have a certain circular potential." ;
                 rdfs:label "Recertifies For" .
 
 
@@ -211,7 +216,7 @@ By using the \"has Source Type\" property, one can associate a material with a s
                                                                                                              )
                                                                                                ] ;
                                                                                    rdfs:range :CircularPotential ;
-                                                                                   <http://purl.org/dc/terms/description> """is an object property that can be used to indicate the final circular potential of a product when it has reached the end of its life cycle. It can be used to link a product to its final circular potential, which may be different from its current or previous circular potentials.
+                                                                                   rdfs:comment """is an object property that can be used to indicate the final circular potential of a product when it has reached the end of its life cycle. It can be used to link a product to its final circular potential, which may be different from its current or previous circular potentials.
 
 For example, a product may have a reuse potential, a recycling potential, and a repurposing potential, but when it can no longer be repurposed, it may have a final circular potential of disposal or waste. The hasFinalCircularPotential property can be used to link the product to this final potential.
 
@@ -247,14 +252,15 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
                                                          )
                                            ] ;
                                rdfs:range xsd:string ;
-                               <http://purl.org/dc/terms/description> "allows for the quantification of circular potential for different components, buildings or functional layers. Depeneding on the indicator definition of the ontology user, e.g., percentage or ranking, a value could be attributed to demonstrate the circualr potential based on the desired indicator defintion."@en .
+                               rdfs:comment "allows for the quantification of circular potential for different components, buildings or functional layers. Depeneding on the indicator definition of the ontology user, e.g., percentage or ranking, a value could be attributed to demonstrate the circualr potential based on the desired indicator defintion."@en ;
+                               rdfs:label "has Circular Potential Indicator" .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate
 :hasConstructionDate rdf:type owl:DatatypeProperty ;
                      rdfs:domain <https://w3id.org/bot#Building> ;
                      rdfs:range xsd:dateTime ;
-                     <http://purl.org/dc/terms/description> "The date when the building was constructed." ;
+                     rdfs:comment "The date when the building was constructed." ;
                      rdfs:label "has Construction Date"@en .
 
 
@@ -262,7 +268,7 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
 :hasDecommissioningDate rdf:type owl:DatatypeProperty ;
                         rdfs:domain <https://w3id.org/bot#Building> ;
                         rdfs:range xsd:dateTime ;
-                        <http://purl.org/dc/terms/description> "The date when the building is scheduled or planned to be decommissioned." ;
+                        rdfs:comment "The date when the building is scheduled or planned to be decommissioned." ;
                         rdfs:label "has Decommissioing Date"@en .
 
 
@@ -275,7 +281,7 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
                                          )
                            ] ;
                rdfs:range xsd:nonNegativeInteger ;
-               <http://purl.org/dc/terms/description> """Design Life  is considered as a useful period of life time where major modifications are not needed. 
+               rdfs:comment """Design Life  is considered as a useful period of life time where major modifications are not needed. 
 A reusable element can have one design life and multiple service lives, whereas a conventional element usually has the same design life as service life.""" ;
                rdfs:label "has Design Life"@en .
 
@@ -289,7 +295,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                            )
                              ] ;
                  rdfs:range xsd:nonNegativeInteger ;
-                 <http://purl.org/dc/terms/description> """Economic Life refers ro the amount of time an element is in service before it is more economically advantageous to decommission or replace it. This dataproperty,
+                 rdfs:comment """Economic Life refers ro the amount of time an element is in service before it is more economically advantageous to decommission or replace it. This dataproperty,
 has Economic life, can be used in cases where the exact service life or design life is not known, or if it does not match the expected service life of an existing building.""" ;
                  rdfs:label "has Economic Life"@en .
 
@@ -303,7 +309,7 @@ has Economic life, can be used in cases where the exact service life or design l
                                           )
                             ] ;
                 rdfs:range xsd:nonNegativeInteger ;
-                <http://purl.org/dc/terms/description> """According to ISO 20887, service life is the “period of time after installation during which a facility or its component parts meet or exceed the performance requirements.\"
+                rdfs:comment """According to ISO 20887, service life is the “period of time after installation during which a facility or its component parts meet or exceed the performance requirements.\"
 A reusable element can have one design life and multiple service lives, whereas a conventional element usually has the same design life as service life.""" ;
                 rdfs:label "has Service Life"@en .
 
@@ -313,7 +319,8 @@ A reusable element can have one design life and multiple service lives, whereas 
                        owl:FunctionalProperty ;
               rdfs:domain <https://w3id.org/digitalconstruction/0.3/BuildingMaterials#Material> ;
               rdfs:range xsd:string ;
-              <http://purl.org/dc/terms/description> "Represents the waste code associated with the material, as per waste management classification systems, for instance, the European Waste Code (EWC)"@en .
+              rdfs:comment "Represents the waste code associated with the material, as per waste management classification systems, for instance, the European Waste Code (EWC)"@en ;
+              rdfs:label "has Waste Code" .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasCurrentUseCount
@@ -326,7 +333,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                                                                                       )
                                                                                         ] ;
                                                                             rdfs:range xsd:nonNegativeInteger ;
-                                                                            <http://purl.org/dc/terms/description> "represent the number of use counts that product is currently being used,  from the total reuse count that the product is designed for."@en ;
+                                                                            rdfs:comment "represent the number of use counts that product is currently being used,  from the total reuse count that the product is designed for."@en ;
                                                                             rdfs:label "has Current Use Count"@en .
 
 
@@ -340,7 +347,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                                                                                           )
                                                                                             ] ;
                                                                                 rdfs:range xsd:nonNegativeInteger ;
-                                                                                <http://purl.org/dc/terms/description> "represent the number of reuses that are remaining from the total reuse count that the product is designed for."@en ;
+                                                                                rdfs:comment "represent the number of reuses that are remaining from the total reuse count that the product is designed for."@en ;
                                                                                 rdfs:label "has Remaining Reuse Count"@en .
 
 
@@ -354,7 +361,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                                                                                       )
                                                                                         ] ;
                                                                             rdfs:range xsd:nonNegativeInteger ;
-                                                                            <http://purl.org/dc/terms/description> "indicates the total number of reuses, i.e., reuse counts, that the product is designed for."@en ;
+                                                                            rdfs:comment "indicates the total number of reuses, i.e., reuse counts, that the product is designed for."@en ;
                                                                             rdfs:label "has Total Reuse Count"@en .
 
 
@@ -369,7 +376,7 @@ A reusable element can have one design life and multiple service lives, whereas 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification
 :Certification rdf:type owl:Class ;
                rdfs:subClassOf :CircularRequirement ;
-               <http://purl.org/dc/terms/description> "Certification requirements refer to the specific criteria or standards that need to be met in order to obtain certification for certain products, processes, or components within the context of circular economy practices. Not all circular potentials may require certification, but certification can be necessary for certain reusable structural parts or components. A certificate serves as a validation or endorsement that the product or component meets specific standards, regulations, or specifications related to safety, quality, environmental impact, or other relevant criteria." ;
+               rdfs:comment "Certification requirements refer to the specific criteria or standards that need to be met in order to obtain certification for certain products, processes, or components within the context of circular economy practices. Not all circular potentials may require certification, but certification can be necessary for certain reusable structural parts or components. A certificate serves as a validation or endorsement that the product or component meets specific standards, regulations, or specifications related to safety, quality, environmental impact, or other relevant criteria." ;
                rdfs:label "Certification"@en .
 
 
@@ -381,7 +388,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                                      :MechanicalConnection
                                                    )
                                      ] ;
-                    <http://purl.org/dc/terms/description> """This type of connection is formed through chemical reactions between two components, resulting in an irreversible bond. For example, the use of adhesives such as epoxy. A chemical connection could be Irreversible Connection.
+                    rdfs:comment """This type of connection is formed through chemical reactions between two components, resulting in an irreversible bond. For example, the use of adhesives such as epoxy. A chemical connection could be Irreversible Connection.
 
 Note: The irreversibility of this bond can pose challenges in the future, such as difficulty in disassembling or repairing the structure, thus leading to the preference for alternative methods of connection that possess greater versatility and ease of manipulation. The ChemicalConnection, while a common method utilized in conventional construction practices, is not necessarily deemed an optimal choice due to its permanent nature."""@en ;
                     rdfs:label "Chemical Connection"@en .
@@ -389,13 +396,13 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential
 :CircularPotential rdf:type owl:Class ;
-                   <http://purl.org/dc/terms/description> "To define what happens in the End-of-Life cycle of a building or functional layer or component, a circular potential can be attributed to it." ;
+                   rdfs:comment "To define what happens in the End-of-Life cycle of a building or functional layer or component, a circular potential can be attributed to it." ;
                    rdfs:label "Circular Potential"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement
 :CircularRequirement rdf:type owl:Class ;
-                     <http://purl.org/dc/terms/description> "For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property." ;
+                     rdfs:comment "For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property." ;
                      rdfs:label "Circular Requirement" .
 
 
@@ -429,7 +436,7 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
 :DirectConnection rdf:type owl:Class ;
                   rdfs:subClassOf :ConnectionType ;
                   owl:disjointWith :IndirectConnection ;
-                  <http://purl.org/dc/terms/description> """The Direct Connection refers to a type of connection where two components are in direct physical contact with each other, with their surfaces touching. An example of a Direct Connection in the context of construction products would be the use of interlocking joints.
+                  rdfs:comment """The Direct Connection refers to a type of connection where two components are in direct physical contact with each other, with their surfaces touching. An example of a Direct Connection in the context of construction products would be the use of interlocking joints.
 
 Note:The simplicity and directness of the Direct Connection make it a useful design choice in circualr construction projects, particularly in situations where a strong, stable connection is desired with minimal intervention."""@en ;
                   rdfs:label "Direct Connection"@en .
@@ -456,21 +463,21 @@ Note:The simplicity and directness of the Direct Connection make it a useful des
                                                           ]
                                       ] ;
                   rdfs:subClassOf :CircularPotential ;
-                  <http://purl.org/dc/terms/description> "When an item can no longer be reused, remanufactured, or recycled, it will have Discard Potential." ;
+                  rdfs:comment "When an item can no longer be reused, remanufactured, or recycled, it will have Discard Potential." ;
                   rdfs:label "Discard Potential"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure
 :Exposure rdf:type owl:Class ;
           rdfs:subClassOf :CircularRequirement ;
-          <http://purl.org/dc/terms/description> "Exposure is the class that helps with describing how a reusable item was (or should be) exposed to certain environmental conditions. If certain criteria must be met to keep the deconstructed elements in environmental conditions that stop their elements from deteriorating, these could be described in this class. Moreover, their storage conditions could also be described in this class." ;
+          rdfs:comment "Exposure is the class that helps with describing how a reusable item was (or should be) exposed to certain environmental conditions. If certain criteria must be met to keep the deconstructed elements in environmental conditions that stop their elements from deteriorating, these could be described in this class. Moreover, their storage conditions could also be described in this class." ;
           rdfs:label "Exposure"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade
 :Facade rdf:type owl:Class ;
         rdfs:subClassOf :FunctionalLayer ;
-        <http://purl.org/dc/terms/description> "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The Facade, or Skin, represents the exterior layer of a building, which undergoes more frequent changes compared to the structure.This class may be used for when the circular actors audit/recertify the facade layer of an existing building to be reused." ;
+        rdfs:comment "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The Facade, or Skin, represents the exterior layer of a building, which undergoes more frequent changes compared to the structure.This class may be used for when the circular actors audit/recertify the facade layer of an existing building to be reused." ;
         rdfs:label "Facade"@en .
 
 
@@ -478,7 +485,7 @@ Note:The simplicity and directness of the Direct Connection make it a useful des
 :FunctionalLayer rdf:type owl:Class ;
                  owl:disjointWith <https://w3id.org/bot#Building> ,
                                   <https://www.projekt-scope.de/ontologies/bpo/#Component> ;
-                 <http://purl.org/dc/terms/description> "Fucntional Layer is disjoint with building and coponents." ;
+                 rdfs:comment "Fucntional Layer is disjoint with building and coponents." ;
                  rdfs:label "Functional Layer"@en .
 
 
@@ -490,7 +497,7 @@ Note:The simplicity and directness of the Direct Connection make it a useful des
                                                           :MechanicalConnection
                                                         )
                                           ] ;
-                         <http://purl.org/dc/terms/description> """Gravitational Connection is elaborated here based on the work of (Durmisevic, 2006).Gravitational Connection is introduced, but not thoroughly examined in DOR. Despite gravity's power to attract two objects, it is not widely utilized in construction projects. There is room for further elaboration and extension of this class. 
+                         rdfs:comment """Gravitational Connection is elaborated here based on the work of (Durmisevic, 2006).Gravitational Connection is introduced, but not thoroughly examined in DOR. Despite gravity's power to attract two objects, it is not widely utilized in construction projects. There is room for further elaboration and extension of this class. 
 
 Reference: Durmisevic, E., 2006. Transformable building structures : design for dissassembly as a way to introduce sustainable engineering to building design & construction (doctoral thesis). TUDelft."""@en ;
                          rdfs:label "Gravitational Connection"@en .
@@ -503,14 +510,14 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                                      owl:complementOf :NonHazardousMaterial
                                    ] ;
                    owl:disjointWith :NonHazardousMaterial ;
-                   <http://purl.org/dc/terms/description> "According to the Waste Directive 2008/98/EC, hazardous materials are sourced from the type of resources that will cause health damage to humans, animals, plants, living organisms, and the environment." ;
+                   rdfs:comment "According to the Waste Directive 2008/98/EC, hazardous materials are sourced from the type of resources that will cause health damage to humans, animals, plants, living organisms, and the environment." ;
                    rdfs:label "Hazardous Material"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection
 :IndirectConnection rdf:type owl:Class ;
                     rdfs:subClassOf :ConnectionType ;
-                    rdfs:label "Indirect Connection"@en .
+                    rdfs:comment "Indirect Connection"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection
@@ -524,7 +531,7 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
 :InspectionMode rdf:type owl:Class ;
                 rdfs:subClassOf :Inspection ;
                 owl:disjointWith :Inspection_Method ;
-                <http://purl.org/dc/terms/description> "Inspection Mode refers to the different modes of conducting inspections, such as visual inspection, digital inspection, automated inspection, and so on." ;
+                rdfs:comment "Inspection Mode refers to the different modes of conducting inspections, such as visual inspection, digital inspection, automated inspection, and so on." ;
                 rdfs:label "Inspection Mode"@en .
 
 
@@ -554,21 +561,21 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                                           owl:complementOf :ReversibleConnection
                                         ] ;
                         owl:disjointWith :ReversibleConnection ;
-                        <http://purl.org/dc/terms/description> "Irreversible connections cannot be easily disconnected or disassembled without causing permanent damage to the components or connections themselves. Examples of irreversible connections include welded joints or adhesive bonds, where the connections are designed to be permanent and cannot be easily undone."@en ;
+                        rdfs:comment "Irreversible connections cannot be easily disconnected or disassembled without causing permanent damage to the components or connections themselves. Examples of irreversible connections include welded joints or adhesive bonds, where the connections are designed to be permanent and cannot be easily undone."@en ;
                         rdfs:label "Reversible Connection" .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#LegalRequirement
 :LegalRequirement rdf:type owl:Class ;
                   rdfs:subClassOf :CircularRequirement ;
-                  <http://purl.org/dc/terms/description> "Legal requirements in the context of this ontology refer to the regulations, rules, and/or design and implementation standards that govern the treatment, handling, and reuse of components. By including legal requirements as part of the information models, stakeholders can ensure that the necessary legal considerations are observed." ;
+                  rdfs:comment "Legal requirements in the context of this ontology refer to the regulations, rules, and/or design and implementation standards that govern the treatment, handling, and reuse of components. By including legal requirements as part of the information models, stakeholders can ensure that the necessary legal considerations are observed." ;
                   rdfs:label "Legal Requirement" .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics
 :Logistics rdf:type owl:Class ;
            rdfs:subClassOf :CircularRequirement ;
-           <http://purl.org/dc/terms/description> "Logistics requirements refer to the specific needs -such as packaging requirements, truck sizes, and other logistical considerations -  related to the movement, transportation, and delivery of reusable components." ;
+           rdfs:comment "Logistics requirements refer to the specific needs -such as packaging requirements, truck sizes, and other logistical considerations -  related to the movement, transportation, and delivery of reusable components." ;
            rdfs:label "Logistics"@en .
 
 
@@ -607,7 +614,7 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType
 :MaterialSourceType rdf:type owl:Class ;
-                    <http://purl.org/dc/terms/description> "This class extends the DICM:Material from the DICM ontology through DOR:hasSourceType property. Material Source Type points out the source type of materials, e.g., renewable or hazardous, emphasising the crucial role of the source of the material in decision-making for reuse, EoL treatment and handling." ;
+                    rdfs:comment "This class extends the DICM:Material from the DICM ontology through DOR:hasSourceType property. Material Source Type points out the source type of materials, e.g., renewable or hazardous, emphasising the crucial role of the source of the material in decision-making for reuse, EoL treatment and handling." ;
                     rdfs:label "Material Source Type"@en .
 
 
@@ -619,7 +626,7 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                                                        :GravitationalConnection
                                                      )
                                        ] ;
-                      <http://purl.org/dc/terms/description> """Mechanical Connection refers to type of connections that are established through the application of mechanical forces such as shear or tension. In the context of construction products, an example of a Mechanical Connection would be the use of threaded fasteners, such as bolts and nuts, to secure two or more components together. A mechanical connection could be Reversible Connection. 
+                      rdfs:comment """Mechanical Connection refers to type of connections that are established through the application of mechanical forces such as shear or tension. In the context of construction products, an example of a Mechanical Connection would be the use of threaded fasteners, such as bolts and nuts, to secure two or more components together. A mechanical connection could be Reversible Connection. 
 
 Note: These connections, such as those created through the use of bolts, embody the ideal characteristics for circular design as they are capable of being easily reversed. The versatility offered by the reversibility of the MechanicalConnection makes it a highly desirable option in construction projects."""@en ;
                       rdfs:label "Mechanical Connection"@en .
@@ -631,7 +638,7 @@ Note: These connections, such as those created through the use of bolts, embody 
                                       [ rdf:type owl:Class ;
                                         owl:complementOf :HazardousMaterial
                                       ] ;
-                      <http://purl.org/dc/terms/description> "A  type of resource that is not classified as hazardous is non-hazardous material source type." ;
+                      rdfs:comment "A  type of resource that is not classified as hazardous is non-hazardous material source type." ;
                       rdfs:label "Non-hazardous Material"@en .
 
 
@@ -642,7 +649,7 @@ Note: These connections, such as those created through the use of bolts, embody 
                                         owl:complementOf :RenewableMaterial
                                       ] ;
                       owl:disjointWith :RenewableMaterial ;
-                      <http://purl.org/dc/terms/description> "A type of resource that exists in a fixed amount and cannot be naturally replenished or cleansed on a human time scale"@en ;
+                      rdfs:comment "A type of resource that exists in a fixed amount and cannot be naturally replenished or cleansed on a human time scale"@en ;
                       rdfs:label "Non-renewable Material"@en .
 
 
@@ -650,21 +657,21 @@ Note: These connections, such as those created through the use of bolts, embody 
 :OffSite rdf:type owl:Class ;
          rdfs:subClassOf :SiteDependency ;
          owl:disjointWith :OnSite ;
-         <http://purl.org/dc/terms/description> "Off-site site dependency refers to the situation where components from a particular site are transported or moved to another location." ;
+         rdfs:comment "Off-site site dependency refers to the situation where components from a particular site are transported or moved to another location." ;
          rdfs:label "Off-site"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite
 :OnSite rdf:type owl:Class ;
         rdfs:subClassOf :SiteDependency ;
-        <http://purl.org/dc/terms/description> "On-site site dependency emphasises the preference and recommendation to use components on the same construction site where they are currently located." ;
+        rdfs:comment "On-site site dependency emphasises the preference and recommendation to use components on the same construction site where they are currently located." ;
         rdfs:label "On-site"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel
 :Personnel rdf:type owl:Class ;
            rdfs:subClassOf :CircularRequirement ;
-           <http://purl.org/dc/terms/description> "In the context of circular requirements, Personnel refers to the human resources (with or without particular qualifications or skills) needed to carry out specific tasks related to deconstruction, reassembly, or other circular practices within a project." ;
+           rdfs:comment "In the context of circular requirements, Personnel refers to the human resources (with or without particular qualifications or skills) needed to carry out specific tasks related to deconstruction, reassembly, or other circular practices within a project." ;
            rdfs:label "Personnel"@en .
 
 
@@ -691,21 +698,21 @@ Note: These connections, such as those created through the use of bolts, embody 
 :PrimaryRawMaterial rdf:type owl:Class ;
                     rdfs:subClassOf :MaterialSourceType ;
                     owl:disjointWith :SecondaryRawMaterial ;
-                    <http://purl.org/dc/terms/description> "A type of resource that is extracted from the planet and used as inputs for industrial production. They are not processed or altered and are used in the first life cycle stage in the creation of a finished product."@en ;
+                    rdfs:comment "A type of resource that is extracted from the planet and used as inputs for industrial production. They are not processed or altered and are used in the first life cycle stage in the creation of a finished product."@en ;
                     rdfs:label "Primary Raw Material"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial
 :RecyclableMaterial rdf:type owl:Class ;
                     rdfs:subClassOf :MaterialSourceType ;
-                    <http://purl.org/dc/terms/description> "A type of resource that has the characteristic to be diverted from the waste stream thanks to available processes and programmes and can be collected, processed and returned to (re)use in the form of raw materials"@en ;
+                    rdfs:comment "A type of resource that has the characteristic to be diverted from the waste stream thanks to available processes and programmes and can be collected, processed and returned to (re)use in the form of raw materials"@en ;
                     rdfs:label "Recyclable Material"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential
 :RecyclingPotential rdf:type owl:Class ;
                     rdfs:subClassOf :CircularPotential ;
-                    <http://purl.org/dc/terms/description> "When an item can no longer be reused, remanufactured, or repaired, it can be recycled if the material is inherently recyclable. This results in the item having \"RecyclingPotential.\" For an assembly made with multiple materials to have RecyclingPotential, each material must be recyclable."@en ;
+                    rdfs:comment "When an item can no longer be reused, remanufactured, or repaired, it can be recycled if the material is inherently recyclable. This results in the item having \"RecyclingPotential.\" For an assembly made with multiple materials to have RecyclingPotential, each material must be recyclable."@en ;
                     rdfs:label "Recycling Potential"@en .
 
 
@@ -728,7 +735,7 @@ Note: These connections, such as those created through the use of bolts, embody 
                                                                    ) ;
                                                 rdf:type owl:Class
                                               ] ;
-                          <http://purl.org/dc/terms/description> """Remanufacturing Potential is second to Reuse Potential. If an assembly, some sub-parts of the assembly might need to be replaced or repaired before being reused in the next life cycle.
+                          rdfs:comment """Remanufacturing Potential is second to Reuse Potential. If an assembly, some sub-parts of the assembly might need to be replaced or repaired before being reused in the next life cycle.
 If an element, the element needs major interventions such as repaire before it is can be reused.""" ;
                           rdfs:label "Remanufacturing Potential"@en .
 
@@ -739,21 +746,21 @@ If an element, the element needs major interventions such as repaire before it i
                                    [ rdf:type owl:Class ;
                                      owl:complementOf :NonRenewableMaterial
                                    ] ;
-                   <http://purl.org/dc/terms/description> "A type of resource that could be grown and can be naturally replenished or cleansed on a human time scale."@en ;
+                   rdfs:comment "A type of resource that could be grown and can be naturally replenished or cleansed on a human time scale."@en ;
                    rdfs:label "Renewable Material"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential
 :RepurposingPotential rdf:type owl:Class ;
                       rdfs:subClassOf :CircularPotential ;
-                      <http://purl.org/dc/terms/description> "For concrete, which is technically not recyclable, Repurposing Potential can be anticipated." ;
+                      rdfs:comment "For concrete, which is technically not recyclable, Repurposing Potential can be anticipated." ;
                       rdfs:label "Repurposing Potential"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential
 :ReusePotential rdf:type owl:Class ;
                 rdfs:subClassOf :CircularPotential ;
-                <http://purl.org/dc/terms/description> "Reuse Potential is for components that need no major intervention (Aesthetic fixes might be necessary). If an assembly, all sub-parts of the assembly can be reused as they are deconstructued. If an element, the element as it is can be reused." ;
+                rdfs:comment "Reuse Potential is for components that need no major intervention (Aesthetic fixes might be necessary). If an assembly, all sub-parts of the assembly can be reused as they are deconstructued. If an element, the element as it is can be reused." ;
                 rdfs:label "Reuse Potential"@en .
 
 
@@ -763,49 +770,49 @@ If an element, the element needs major interventions such as repaire before it i
                                       [ rdf:type owl:Class ;
                                         owl:complementOf :IrreversibleConnection
                                       ] ;
-                      <http://purl.org/dc/terms/description> "Reversible connections refer to connections that can be disconnected or disassembled - without causing significant damage - allowing for easy alteration and addition to structures. A bolt can be considered a reversible connection."@en ;
+                      rdfs:comment "Reversible connections refer to connections that can be disconnected or disassembled - without causing significant damage - allowing for easy alteration and addition to structures. A bolt can be considered a reversible connection."@en ;
                       rdfs:label "Reversible Connection"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial
 :SecondaryRawMaterial rdf:type owl:Class ;
                       rdfs:subClassOf :MaterialSourceType ;
-                      <http://purl.org/dc/terms/description> "A type of resource that is recovered from previous use or is recovered waste originating from another product system and utilised as an input in another product system. Often, secondary raw material sources are recycled ones." ;
+                      rdfs:comment "A type of resource that is recovered from previous use or is recovered waste originating from another product system and utilised as an input in another product system. Often, secondary raw material sources are recycled ones." ;
                       rdfs:label "Secondary Raw Material" .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency
 :SiteDependency rdf:type owl:Class ;
                 rdfs:subClassOf :CircularRequirement ;
-                <http://purl.org/dc/terms/description> "Site dependency refers to the extent to which a construction project relies on the physical location of the current project. This circular requirement is important for decision makings in multiple layers and impacts the carbon and waste outputs of whether or not a component is reused on site or not." ;
+                rdfs:comment "Site dependency refers to the extent to which a construction project relies on the physical location of the current project. This circular requirement is important for decision makings in multiple layers and impacts the carbon and waste outputs of whether or not a component is reused on site or not." ;
                 rdfs:label "Site Dependency"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan
 :SpacePlan rdf:type owl:Class ;
            rdfs:subClassOf :FunctionalLayer ;
-           <http://purl.org/dc/terms/description> "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own." ;
+           rdfs:comment "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own." ;
            rdfs:label "Space Plan"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure
 :Structure rdf:type owl:Class ;
            rdfs:subClassOf :FunctionalLayer ;
-           <http://purl.org/dc/terms/description> "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The structure layer signified the foundation and other load-bearing components of a building, which are (1) challenging and costly to modify, (2) have longer life spans in comparision with other building components and layers, all of which leading to infrequent alterations. This class my be used for when the structure of a new construction building is designed to be completely reused in the future, or when the circualr actors audit/recertify the structure layer to be reused in an exisitng building." ;
+           rdfs:comment "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The structure layer signified the foundation and other load-bearing components of a building, which are (1) challenging and costly to modify, (2) have longer life spans in comparision with other building components and layers, all of which leading to infrequent alterations. This class my be used for when the structure of a new construction building is designed to be completely reused in the future, or when the circualr actors audit/recertify the structure layer to be reused in an exisitng building." ;
            rdfs:label "Structure"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel
 :TrainedPersonnel rdf:type owl:Class ;
                   rdfs:subClassOf :Personnel ;
-                  <http://purl.org/dc/terms/description> "Trained personnel possess the specialised knowledge, skills, and training necessary to perform specific tasks related to circular practices." ;
+                  rdfs:comment "Trained personnel possess the specialised knowledge, skills, and training necessary to perform specific tasks related to circular practices." ;
                   rdfs:label "Trainned Personnel"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel
 :UntrainedPersonnel rdf:type owl:Class ;
                     rdfs:subClassOf :Personnel ;
-                    <http://purl.org/dc/terms/description> "Untrained personnel refers to individuals who do not possess specialised training or expertise but can still contribute to circular practices. They may not have the same level of knowledge or qualification as trained personnel to participate in certain disassembly or assembly activities." ;
+                    rdfs:comment "Untrained personnel refers to individuals who do not possess specialised training or expertise but can still contribute to circular practices. They may not have the same level of knowledge or qualification as trained personnel to participate in certain disassembly or assembly activities." ;
                     rdfs:label "Untrainned Personnel"@en .
 
 

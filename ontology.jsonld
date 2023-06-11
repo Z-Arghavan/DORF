@@ -437,16 +437,11 @@
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@language" : "en",
-    "@value" : "http://creativecommons.org/licenses/by/4.0/"
-  }, {
-    "@value" : "\"DOR\" by \"Arghavan Akbarieh\" developer groups is\nlicensed under CC BY 4.0. You are free to share (copy and redistribute\nthe material in any medium or format) and adapt (remix, transform, and\nbuild upon the material) for any purpose, even commercially. for any\npurpose, even commercially. The licensor cannot revoke these freedoms as\nlong as you follow the license terms. You must give appropriate credit\n(by using the original ontology IRI for the whole ontology and original\nterm IRIs for individual terms), provide a link to the license, and\nindicate if any changes were made. You may do so in any reasonable\nmanner, but not in any way that suggests the licensor endorses you or\nyour use.\n\"DOR\"by Arghavan Akbarieh is licensed\nunder CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+    "@value" : "http://creativecommons.org/licenses/by/4.0/\n\"DOR\" by \"Arghavan Akbarieh\" developer groups is\nlicensed under CC BY 4.0. You are free to share (copy and redistribute\nthe material in any medium or format) and adapt (remix, transform, and\nbuild upon the material) for any purpose, even commercially. for any\npurpose, even commercially. The licensor cannot revoke these freedoms as\nlong as you follow the license terms. You must give appropriate credit\n(by using the original ontology IRI for the whole ontology and original\nterm IRIs for individual terms), provide a link to the license, and\nindicate if any changes were made. You may do so in any reasonable\nmanner, but not in any way that suggests the licensor endorses you or\nyour use.\n\"DOR\"by Arghavan Akbarieh is licensed\nunder CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "en",
-    "@value" : "\"DOR\"by Arghavan Akbarieh is licensed\nunder CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+    "@value" : "This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. \n\nThis ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. \n\nAdditionally, DOR ontology would supports the processes involved in depositing reclaimed materials in a material bank,digital disgnosis, the conditions for acceptance of a material bank for second life cycle reuse, and the documentation required to ensure proper tracking and accounting of the materials in the construction industry..\n\n\"DOR\"by Arghavan Akbarieh is licensed\nunder CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/2.0"
@@ -457,7 +452,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Certification requirements refer to the specific criteria or standards that need to be met in order to obtain certification for certain products, processes, or components within the context of circular economy practices. Not all circular potentials may require certification, but certification can be necessary for certain reusable structural parts or components. A certificate serves as a validation or endorsement that the product or component meets specific standards, regulations, or specifications related to safety, quality, environmental impact, or other relevant criteria."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -470,7 +465,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This type of connection is formed through chemical reactions between two components, resulting in an irreversible bond. For example, the use of adhesives such as epoxy. A chemical connection could be Irreversible Connection.\n\nNote: The irreversibility of this bond can pose challenges in the future, such as difficulty in disassembling or repairing the structure, thus leading to the preference for alternative methods of connection that possess greater versatility and ease of manipulation. The ChemicalConnection, while a common method utilized in conventional construction practices, is not necessarily deemed an optimal choice due to its permanent nature."
   } ],
@@ -487,7 +482,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "To define what happens in the End-of-Life cycle of a building or functional layer or component, a circular potential can be attributed to it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -497,7 +492,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -531,7 +526,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The Direct Connection refers to a type of connection where two components are in direct physical contact with each other, with their surfaces touching. An example of a Direct Connection in the context of construction products would be the use of interlocking joints.\n\nNote:The simplicity and directness of the Direct Connection make it a useful design choice in circualr construction projects, particularly in situations where a strong, stable connection is desired with minimal intervention."
   } ],
@@ -548,7 +543,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "When an item can no longer be reused, remanufactured, or recycled, it will have Discard Potential."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -564,7 +559,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Exposure is the class that helps with describing how a reusable item was (or should be) exposed to certain environmental conditions. If certain criteria must be met to keep the deconstructed elements in environmental conditions that stop their elements from deteriorating, these could be described in this class. Moreover, their storage conditions could also be described in this class."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -577,7 +572,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The Facade, or Skin, represents the exterior layer of a building, which undergoes more frequent changes compared to the structure.This class may be used for when the circular actors audit/recertify the facade layer of an existing building to be reused."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -590,7 +585,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Fucntional Layer is disjoint with building and coponents."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -605,7 +600,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Gravitational Connection is elaborated here based on the work of (Durmisevic, 2006).Gravitational Connection is introduced, but not thoroughly examined in DOR. Despite gravity's power to attract two objects, it is not widely utilized in construction projects. There is room for further elaboration and extension of this class. \n\nReference: Durmisevic, E., 2006. Transformable building structures : design for dissassembly as a way to introduce sustainable engineering to building design & construction (doctoral thesis). TUDelft."
   } ],
@@ -622,7 +617,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "According to the Waste Directive 2008/98/EC, hazardous materials are sourced from the type of resources that will cause health damage to humans, animals, plants, living organisms, and the environment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -640,7 +635,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indirect Connection"
   } ],
@@ -663,7 +658,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inspection Mode refers to the different modes of conducting inspections, such as visual inspection, digital inspection, automated inspection, and so on."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -712,7 +707,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Irreversible connections cannot be easily disconnected or disassembled without causing permanent damage to the components or connections themselves. Examples of irreversible connections include welded joints or adhesive bonds, where the connections are designed to be permanent and cannot be easily undone."
   } ],
@@ -730,7 +725,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#LegalRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Legal requirements in the context of this ontology refer to the regulations, rules, and/or design and implementation standards that govern the treatment, handling, and reuse of components. By including legal requirements as part of the information models, stakeholders can ensure that the necessary legal considerations are observed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -742,7 +737,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Logistics requirements refer to the specific needs -such as packaging requirements, truck sizes, and other logistical considerations -  related to the movement, transportation, and delivery of reusable components."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -779,7 +774,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This class extends the DICM:Material from the DICM ontology through DOR:hasSourceType property. Material Source Type points out the source type of materials, e.g., renewable or hazardous, emphasising the crucial role of the source of the material in decision-making for reuse, EoL treatment and handling."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -789,7 +784,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Mechanical Connection refers to type of connections that are established through the application of mechanical forces such as shear or tension. In the context of construction products, an example of a Mechanical Connection would be the use of threaded fasteners, such as bolts and nuts, to secure two or more components together. A mechanical connection could be Reversible Connection. \n\nNote: These connections, such as those created through the use of bolts, embody the ideal characteristics for circular design as they are capable of being easily reversed. The versatility offered by the reversibility of the MechanicalConnection makes it a highly desirable option in construction projects."
   } ],
@@ -806,7 +801,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A  type of resource that is not classified as hazardous is non-hazardous material source type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -821,7 +816,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A type of resource that exists in a fixed amount and cannot be naturally replenished or cleansed on a human time scale"
   } ],
@@ -840,7 +835,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OffSite",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Off-site site dependency refers to the situation where components from a particular site are transported or moved to another location."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -856,7 +851,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "On-site site dependency emphasises the preference and recommendation to use components on the same construction site where they are currently located."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -869,7 +864,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "In the context of circular requirements, Personnel refers to the human resources (with or without particular qualifications or skills) needed to carry out specific tasks related to deconstruction, reassembly, or other circular practices within a project."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -894,7 +889,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A type of resource that is extracted from the planet and used as inputs for industrial production. They are not processed or altered and are used in the first life cycle stage in the creation of a finished product."
   } ],
@@ -911,7 +906,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A type of resource that has the characteristic to be diverted from the waste stream thanks to available processes and programmes and can be collected, processed and returned to (re)use in the form of raw materials"
   } ],
@@ -925,7 +920,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "When an item can no longer be reused, remanufactured, or repaired, it can be recycled if the material is inherently recyclable. This results in the item having \"RecyclingPotential.\" For an assembly made with multiple materials to have RecyclingPotential, each material must be recyclable."
   } ],
@@ -939,7 +934,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Remanufacturing Potential is second to Reuse Potential. If an assembly, some sub-parts of the assembly might need to be replaced or repaired before being reused in the next life cycle.\nIf an element, the element needs major interventions such as repaire before it is can be reused."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -952,7 +947,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A type of resource that could be grown and can be naturally replenished or cleansed on a human time scale."
   } ],
@@ -968,7 +963,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For concrete, which is technically not recyclable, Repurposing Potential can be anticipated."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -981,7 +976,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Reuse Potential is for components that need no major intervention (Aesthetic fixes might be necessary). If an assembly, all sub-parts of the assembly can be reused as they are deconstructued. If an element, the element as it is can be reused."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -994,7 +989,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Reversible connections refer to connections that can be disconnected or disassembled - without causing significant damage - allowing for easy alteration and addition to structures. A bolt can be considered a reversible connection."
   } ],
@@ -1010,7 +1005,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A type of resource that is recovered from previous use or is recovered waste originating from another product system and utilised as an input in another product system. Often, secondary raw material sources are recycled ones."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1022,7 +1017,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Site dependency refers to the extent to which a construction project relies on the physical location of the current project. This circular requirement is important for decision makings in multiple layers and impacts the carbon and waste outputs of whether or not a component is reused on site or not."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1035,7 +1030,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1048,7 +1043,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The structure layer signified the foundation and other load-bearing components of a building, which are (1) challenging and costly to modify, (2) have longer life spans in comparision with other building components and layers, all of which leading to infrequent alterations. This class my be used for when the structure of a new construction building is designed to be completely reused in the future, or when the circualr actors audit/recertify the structure layer to be reused in an exisitng building."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1061,7 +1056,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Trained personnel possess the specialised knowledge, skills, and training necessary to perform specific tasks related to circular practices."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1074,7 +1069,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Untrained personnel refers to individuals who do not possess specialised training or expertise but can still contribute to circular practices. They may not have the same level of knowledge or qualification as trained personnel to participate in certain disassembly or assembly activities."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1087,7 +1082,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The action that an Auditor carries out."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1118,7 +1113,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The action that a Designer carries out. A designer can design a component for a ceratin circular potential."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1133,7 +1128,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Any Building or Functional Layer or Component has a circular potential. This object property links the circular potential to the designated item."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1149,12 +1144,15 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "allows for the quantification of circular potential for different components, buildings or functional layers. Depeneding on the indicator definition of the ontology user, e.g., percentage or ranking, a value could be attributed to demonstrate the circualr potential based on the desired indicator defintion."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Circular Potential Indicator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1162,7 +1160,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This object property connects the requirements necessary for realising a circular potential and the designated circular potential."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1178,7 +1176,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This object property elaborates the type of connection a \"Component Connection\" or \"Installation Connection\" has."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1194,7 +1192,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The date when the building was constructed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1210,7 +1208,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The date when the building is scheduled or planned to be decommissioned."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1226,7 +1224,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDesignLife",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Design Life  is considered as a useful period of life time where major modifications are not needed. \nA reusable element can have one design life and multiple service lives, whereas a conventional element usually has the same design life as service life."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1242,7 +1240,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasEconomicLife",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Economic Life refers ro the amount of time an element is in service before it is more economically advantageous to decommission or replace it. This dataproperty,\nhas Economic life, can be used in cases where the exact service life or design life is not known, or if it does not match the expected service life of an existing building."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1258,7 +1256,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Object Property between a Building and a Functional layer belongs to that building. \nA Building has different fucntional layers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1274,7 +1272,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Property between a Component and an Inspection for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1286,7 +1284,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Property between a Component and an Inspection Method for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1304,7 +1302,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Property between a Component and an Inspection Mode for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1322,7 +1320,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Property between a Component and an Inspection for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1334,7 +1332,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Property between a Component and an Inspection Method for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1352,7 +1350,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Property between a Component and an Inspection Mode for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1370,7 +1368,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasServiceLife",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "According to ISO 20887, service life is the “period of time after installation during which a facility or its component parts meet or exceed the performance requirements.\"\nA reusable element can have one design life and multiple service lives, whereas a conventional element usually has the same design life as service life."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1386,7 +1384,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The \"has Source Type\" object property is used to specify the source type of a material. DICM:Material is its domain and its range  is Material Source Type.\nBy using the \"has Source Type\" property, one can associate a material with a specific source type, such as \"hazardous material,\" \"non-hazardous material,\" \"non-renewable material,\" \"primary raw material,\" \"recyclable material,\" or \"renewable material\" in order to capture information about the origin or nature of a material, allowing for more detailed analysis and reasoning about materials in post-consumer phase."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1402,12 +1400,15 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Represents the waste code associated with the material, as per waste management classification systems, for instance, the European Waste Code (EWC)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/0.3/BuildingMaterials#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Waste Code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1415,7 +1416,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The action that a Producer or Manufacturer carries out. A producer or manufacturer can produces a component for a ceratin circular potential."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1430,7 +1431,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The action that a Material Bank carries out. A material bank agent or entity can recertify components after assessment to have a certain circular potential."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1458,7 +1459,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasCurrentUseCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "represent the number of use counts that product is currently being used,  from the total reuse count that the product is designed for."
   } ],
@@ -1475,7 +1476,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasFinalCircularPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is an object property that can be used to indicate the final circular potential of a product when it has reached the end of its life cycle. It can be used to link a product to its final circular potential, which may be different from its current or previous circular potentials.\n\nFor example, a product may have a reuse potential, a recycling potential, and a repurposing potential, but when it can no longer be repurposed, it may have a final circular potential of disposal or waste. The hasFinalCircularPotential property can be used to link the product to this final potential.\n\nThe range of hasFinalCircularPotential could be the class CircularPotential, while its domain would be the class Component or any other class that represents a thing that has circular potential."
   } ],
@@ -1492,7 +1493,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasRemainingReuseCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "represent the number of reuses that are remaining from the total reuse count that the product is designed for."
   } ],
@@ -1509,7 +1510,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasTotalReuseCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "indicates the total number of reuses, i.e., reuse counts, that the product is designed for."
   } ],
