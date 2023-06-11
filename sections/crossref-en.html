@@ -81,7 +81,9 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#IndirectConnection"
-            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection">Indirect Connection</a>
+            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection">
+            <span>indirect connection</span>
+         </a>
       </li>
       <li>
          <a href="#Inspection"
@@ -279,6 +281,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Certification</p>
+      <div class="comment">
+         <span class="markdown">Certification requirements refer to the specific criteria or standards that need to be met in order to obtain certification for certain products, processes, or components within the context of circular economy practices. Not all circular potentials may require certification, but certification can be necessary for certain reusable structural parts or components. A certificate serves as a validation or endorsement that the product or component meets specific standards, regulations, or specifications related to safety, quality, environmental impact, or other relevant criteria.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -295,6 +300,11 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection</p>
+      <div class="comment">
+         <span class="markdown">This type of connection is formed through chemical reactions between two components, resulting in an irreversible bond. For example, the use of adhesives such as epoxy. A chemical connection could be Irreversible Connection.
+
+Note: The irreversibility of this bond can pose challenges in the future, such as difficulty in disassembling or repairing the structure, thus leading to the preference for alternative methods of connection that possess greater versatility and ease of manipulation. The ChemicalConnection, while a common method utilized in conventional construction practices, is not necessarily deemed an optimal choice due to its permanent nature.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -311,6 +321,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential</p>
+      <div class="comment">
+         <span class="markdown">To define what happens in the End-of-Life cycle of a building or functional layer or component, a circular potential can be attributed to it.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -355,6 +368,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement</p>
+      <div class="comment">
+         <span class="markdown">For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -415,14 +431,14 @@ This section provides details for each class and property defined by [Ontology N
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection">Direct Connection</a>
             <sup class="type-c" title="class">c</sup>, <a href="#GravitationalConnection"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection">Gravitational Connection</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#IndirectConnection"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection">Indirect Connection</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MechanicalConnection"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection">Mechanical Connection</a>
             <sup class="type-c" title="class">c</sup>, <a href="#IrreversibleConnection"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection">Reversible Connection</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ReversibleConnection"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection">Reversible Connection</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#IndirectConnection"
+               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection">indirect connection</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -463,6 +479,11 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection</p>
+      <div class="comment">
+         <span class="markdown">The Direct Connection refers to a type of connection where two components are in direct physical contact with each other, with their surfaces touching. An example of a Direct Connection in the context of construction products would be the use of interlocking joints.
+
+Note:The simplicity and directness of the Direct Connection make it a useful design choice in circualr construction projects, particularly in situations where a strong, stable connection is desired with minimal intervention.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -473,7 +494,7 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is disjoint with</dt>
          <dd>
             <a href="#IndirectConnection"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection">Indirect Connection</a>
+               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection">indirect connection</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -485,6 +506,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential</p>
+      <div class="comment">
+         <span class="markdown">When an item can no longer be reused, remanufactured, or recycled, it will have Discard Potential.</span>
+      </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -559,6 +583,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure</p>
+      <div class="comment">
+         <span class="markdown">Exposure is the class that helps with describing how a reusable item was (or should be) exposed to certain environmental conditions. If certain criteria must be met to keep the deconstructed elements in environmental conditions that stop their elements from deteriorating, these could be described in this class. Moreover, their storage conditions could also be described in this class.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -575,6 +602,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Facade</p>
+      <div class="comment">
+         <span class="markdown">According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The Facade, or Skin, represents the exterior layer of a building, which undergoes more frequent changes compared to the structure.This class may be used for when the circular actors audit/recertify the facade layer of an existing building to be reused.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -591,6 +621,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer</p>
+      <div class="comment">
+         <span class="markdown">Fucntional Layer is disjoint with building and coponents.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -625,6 +658,11 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection</p>
+      <div class="comment">
+         <span class="markdown">Gravitational Connection is elaborated here based on the work of (Durmisevic, 2006).Gravitational Connection is introduced, but not thoroughly examined in DOR. Despite gravity's power to attract two objects, it is not widely utilized in construction projects. There is room for further elaboration and extension of this class. 
+
+Reference: Durmisevic, E., 2006. Transformable building structures : design for dissassembly as a way to introduce sustainable engineering to building design &amp; construction (doctoral thesis). TUDelft.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -641,6 +679,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial</p>
+      <div class="comment">
+         <span class="markdown">According to the Waste Directive 2008/98/EC, hazardous materials are sourced from the type of resources that will cause health damage to humans, animals, plants, living organisms, and the environment.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -657,12 +698,15 @@ This section provides details for each class and property defined by [Ontology N
       </dl>
    </div>
    <div class="entity" id="IndirectConnection">
-      <h3>Indirect Connection<sup class="type-c" title="class">c</sup>
+      <h3>indirect connection<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IndirectConnection</p>
+      <div class="comment">
+         <span class="markdown">Indirect Connection</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -745,6 +789,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode</p>
+      <div class="comment">
+         <span class="markdown">Inspection Mode refers to the different modes of conducting inspections, such as visual inspection, digital inspection, automated inspection, and so on.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -816,6 +863,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#LegalRequirement</p>
+      <div class="comment">
+         <span class="markdown">Legal requirements in the context of this ontology refer to the regulations, rules, and/or design and implementation standards that govern the treatment, handling, and reuse of components. By including legal requirements as part of the information models, stakeholders can ensure that the necessary legal considerations are observed.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -832,6 +882,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Logistics</p>
+      <div class="comment">
+         <span class="markdown">Logistics requirements refer to the specific needs -such as packaging requirements, truck sizes, and other logistical considerations -  related to the movement, transportation, and delivery of reusable components.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -879,7 +932,7 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#hasSourceType"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType">has Source Type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasWasteCode"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode">has waste code</a>
+               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode">has Waste Code</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -920,6 +973,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType</p>
+      <div class="comment">
+         <span class="markdown">This class extends the DICM:Material from the DICM ontology through DOR:hasSourceType property. Material Source Type points out the source type of materials, e.g., renewable or hazardous, emphasising the crucial role of the source of the material in decision-making for reuse, EoL treatment and handling.</span>
+      </div>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
@@ -954,6 +1010,11 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection</p>
+      <div class="comment">
+         <span class="markdown">Mechanical Connection refers to type of connections that are established through the application of mechanical forces such as shear or tension. In the context of construction products, an example of a Mechanical Connection would be the use of threaded fasteners, such as bolts and nuts, to secure two or more components together. A mechanical connection could be Reversible Connection. 
+
+Note: These connections, such as those created through the use of bolts, embody the ideal characteristics for circular design as they are capable of being easily reversed. The versatility offered by the reversibility of the MechanicalConnection makes it a highly desirable option in construction projects.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -970,6 +1031,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial</p>
+      <div class="comment">
+         <span class="markdown">A  type of resource that is not classified as hazardous is non-hazardous material source type.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -992,6 +1056,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial</p>
+      <div class="comment">
+         <span class="markdown">A type of resource that exists in a fixed amount and cannot be naturally replenished or cleansed on a human time scale</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1014,6 +1081,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OffSite</p>
+      <div class="comment">
+         <span class="markdown">Off-site site dependency refers to the situation where components from a particular site are transported or moved to another location.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1036,6 +1106,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#OnSite</p>
+      <div class="comment">
+         <span class="markdown">On-site site dependency emphasises the preference and recommendation to use components on the same construction site where they are currently located.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1058,6 +1131,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Personnel</p>
+      <div class="comment">
+         <span class="markdown">In the context of circular requirements, Personnel refers to the human resources (with or without particular qualifications or skills) needed to carry out specific tasks related to deconstruction, reassembly, or other circular practices within a project.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1105,6 +1181,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial</p>
+      <div class="comment">
+         <span class="markdown">A type of resource that is extracted from the planet and used as inputs for industrial production. They are not processed or altered and are used in the first life cycle stage in the creation of a finished product.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1156,6 +1235,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclableMaterial</p>
+      <div class="comment">
+         <span class="markdown">A type of resource that has the characteristic to be diverted from the waste stream thanks to available processes and programmes and can be collected, processed and returned to (re)use in the form of raw materials</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1172,6 +1254,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential</p>
+      <div class="comment">
+         <span class="markdown">When an item can no longer be reused, remanufactured, or repaired, it can be recycled if the material is inherently recyclable. This results in the item having "RecyclingPotential." For an assembly made with multiple materials to have RecyclingPotential, each material must be recyclable.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1188,6 +1273,10 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential</p>
+      <div class="comment">
+         <span class="markdown">Remanufacturing Potential is second to Reuse Potential. If an assembly, some sub-parts of the assembly might need to be replaced or repaired before being reused in the next life cycle.
+If an element, the element needs major interventions such as repaire before it is can be reused.</span>
+      </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -1214,6 +1303,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial</p>
+      <div class="comment">
+         <span class="markdown">A type of resource that could be grown and can be naturally replenished or cleansed on a human time scale.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1236,6 +1328,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential</p>
+      <div class="comment">
+         <span class="markdown">For concrete, which is technically not recyclable, Repurposing Potential can be anticipated.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1252,6 +1347,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential</p>
+      <div class="comment">
+         <span class="markdown">Reuse Potential is for components that need no major intervention (Aesthetic fixes might be necessary). If an assembly, all sub-parts of the assembly can be reused as they are deconstructued. If an element, the element as it is can be reused.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1268,6 +1366,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection</p>
+      <div class="comment">
+         <span class="markdown">Irreversible connections cannot be easily disconnected or disassembled without causing permanent damage to the components or connections themselves. Examples of irreversible connections include welded joints or adhesive bonds, where the connections are designed to be permanent and cannot be easily undone.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1290,6 +1391,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection</p>
+      <div class="comment">
+         <span class="markdown">Reversible connections refer to connections that can be disconnected or disassembled - without causing significant damage - allowing for easy alteration and addition to structures. A bolt can be considered a reversible connection.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1312,6 +1416,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial</p>
+      <div class="comment">
+         <span class="markdown">A type of resource that is recovered from previous use or is recovered waste originating from another product system and utilised as an input in another product system. Often, secondary raw material sources are recycled ones.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1334,6 +1441,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SiteDependency</p>
+      <div class="comment">
+         <span class="markdown">Site dependency refers to the extent to which a construction project relies on the physical location of the current project. This circular requirement is important for decision makings in multiple layers and impacts the carbon and waste outputs of whether or not a component is reused on site or not.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1358,6 +1468,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SpacePlan</p>
+      <div class="comment">
+         <span class="markdown">According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1374,6 +1487,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Structure</p>
+      <div class="comment">
+         <span class="markdown">According to Brent (1994), buildings are comprised of multiple layers of change, with each layer evolving on a timescale of its own. The structure layer signified the foundation and other load-bearing components of a building, which are (1) challenging and costly to modify, (2) have longer life spans in comparision with other building components and layers, all of which leading to infrequent alterations. This class my be used for when the structure of a new construction building is designed to be completely reused in the future, or when the circualr actors audit/recertify the structure layer to be reused in an exisitng building.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1390,6 +1506,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#TrainedPersonnel</p>
+      <div class="comment">
+         <span class="markdown">Trained personnel possess the specialised knowledge, skills, and training necessary to perform specific tasks related to circular practices.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1406,6 +1525,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#UntrainedPersonnel</p>
+      <div class="comment">
+         <span class="markdown">Untrained personnel refers to individuals who do not possess specialised training or expertise but can still contribute to circular practices. They may not have the same level of knowledge or qualification as trained personnel to participate in certain disassembly or assembly activities.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1507,6 +1629,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor</p>
+      <div class="comment">
+         <span class="markdown">The action that an Auditor carries out.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1560,6 +1685,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor</p>
+      <div class="comment">
+         <span class="markdown">The action that a Designer carries out. A designer can design a component for a ceratin circular potential.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1584,6 +1712,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential</p>
+      <div class="comment">
+         <span class="markdown">Any Building or Functional Layer or Component has a circular potential. This object property links the circular potential to the designated item.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1616,6 +1747,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement</p>
+      <div class="comment">
+         <span class="markdown">This object property connects the requirements necessary for realising a circular potential and the designated circular potential.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1669,6 +1803,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType</p>
+      <div class="comment">
+         <span class="markdown">This object property elaborates the type of connection a "Component Connection" or "Installation Connection" has.</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -1722,6 +1859,13 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasFinalCircularPotential</p>
+      <div class="comment">
+         <span class="markdown">is an object property that can be used to indicate the final circular potential of a product when it has reached the end of its life cycle. It can be used to link a product to its final circular potential, which may be different from its current or previous circular potentials.
+
+For example, a product may have a reuse potential, a recycling potential, and a repurposing potential, but when it can no longer be repurposed, it may have a final circular potential of disposal or waste. The hasFinalCircularPotential property can be used to link the product to this final potential.
+
+The range of hasFinalCircularPotential could be the class CircularPotential, while its domain would be the class Component or any other class that represents a thing that has circular potential.</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -1757,6 +1901,10 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer</p>
+      <div class="comment">
+         <span class="markdown">Object Property between a Building and a Functional layer belongs to that building. 
+A Building has different fucntional layers.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1808,6 +1956,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspection</p>
+      <div class="comment">
+         <span class="markdown">Property between a Component and an Inspection for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -1835,6 +1986,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMethod</p>
+      <div class="comment">
+         <span class="markdown">Property between a Component and an Inspection Method for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1866,6 +2020,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRecommendedInspectionMode</p>
+      <div class="comment">
+         <span class="markdown">Property between a Component and an Inspection Mode for those inspections that are recommended and not mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1897,6 +2054,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspection</p>
+      <div class="comment">
+         <span class="markdown">Property between a Component and an Inspection for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -1924,6 +2084,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMethod</p>
+      <div class="comment">
+         <span class="markdown">Property between a Component and an Inspection Method for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1955,6 +2118,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasRequiredInspectionMode</p>
+      <div class="comment">
+         <span class="markdown">Property between a Component and an Inspection Mode for those inspections that are required or mandatory to be conducted during the material bank assessment process or after the deconstruction process and before reuse.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1986,6 +2152,10 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType</p>
+      <div class="comment">
+         <span class="markdown">The "has Source Type" object property is used to specify the source type of a material. DICM:Material is its domain and its range  is Material Source Type.
+By using the "has Source Type" property, one can associate a material with a specific source type, such as "hazardous material," "non-hazardous material," "non-renewable material," "primary raw material," "recyclable material," or "renewable material" in order to capture information about the origin or nature of a material, allowing for more detailed analysis and reasoning about materials in post-consumer phase.</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -2013,6 +2183,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor</p>
+      <div class="comment">
+         <span class="markdown">The action that a Producer or Manufacturer carries out. A producer or manufacturer can produces a component for a ceratin circular potential.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2037,6 +2210,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor</p>
+      <div class="comment">
+         <span class="markdown">The action that a Material Bank carries out. A material bank agent or entity can recertify components after assessment to have a certain circular potential.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2059,9 +2235,7 @@ This section provides details for each class and property defined by [Ontology N
    <ul class="hlist">
       <li>
          <a href="#hasCircularPotentialIndicator"
-            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator">
-            <span>has circular potential indicator</span>
-         </a>
+            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator">has Circular Potential Indicator</a>
       </li>
       <li>
          <a href="#hasConstructionDate"
@@ -2097,18 +2271,19 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#hasWasteCode"
-            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode">
-            <span>has waste code</span>
-         </a>
+            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode">has Waste Code</a>
       </li>
    </ul>
    <div class="entity" id="hasCircularPotentialIndicator">
-      <h3>has circular potential indicator<sup class="type-dp" title="data property">dp</sup>
+      <h3>has Circular Potential Indicator<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotentialIndicator</p>
+      <div class="comment">
+         <span class="markdown">allows for the quantification of circular potential for different components, buildings or functional layers. Depeneding on the indicator definition of the ontology user, e.g., percentage or ranking, a value could be attributed to demonstrate the circualr potential based on the desired indicator defintion.</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -2144,6 +2319,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConstructionDate</p>
+      <div class="comment">
+         <span class="markdown">The date when the building was constructed.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2167,6 +2345,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasCurrentUseCount</p>
+      <div class="comment">
+         <span class="markdown">represent the number of use counts that product is currently being used,  from the total reuse count that the product is designed for.</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -2202,6 +2383,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDecommissioningDate</p>
+      <div class="comment">
+         <span class="markdown">The date when the building is scheduled or planned to be decommissioned.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2225,6 +2409,10 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasDesignLife</p>
+      <div class="comment">
+         <span class="markdown">Design Life  is considered as a useful period of life time where major modifications are not needed. 
+A reusable element can have one design life and multiple service lives, whereas a conventional element usually has the same design life as service life.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2257,6 +2445,10 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasEconomicLife</p>
+      <div class="comment">
+         <span class="markdown">Economic Life refers ro the amount of time an element is in service before it is more economically advantageous to decommission or replace it. This dataproperty,
+has Economic life, can be used in cases where the exact service life or design life is not known, or if it does not match the expected service life of an existing building.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2289,6 +2481,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasRemainingReuseCount</p>
+      <div class="comment">
+         <span class="markdown">represent the number of reuses that are remaining from the total reuse count that the product is designed for.</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -2324,6 +2519,10 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasServiceLife</p>
+      <div class="comment">
+         <span class="markdown">According to ISO 20887, service life is the “period of time after installation during which a facility or its component parts meet or exceed the performance requirements."
+A reusable element can have one design life and multiple service lives, whereas a conventional element usually has the same design life as service life.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2356,6 +2555,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasTotalReuseCount</p>
+      <div class="comment">
+         <span class="markdown">indicates the total number of reuses, i.e., reuse counts, that the product is designed for.</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -2385,12 +2587,15 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="hasWasteCode">
-      <h3>has waste code<sup class="type-dp" title="data property">dp</sup>
+      <h3>has Waste Code<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasWasteCode</p>
+      <div class="comment">
+         <span class="markdown">Represents the waste code associated with the material, as per waste management classification systems, for instance, the European Waste Code (EWC)</span>
+      </div>
       <div class="description">
          <p>
             <strong>has characteristics:
