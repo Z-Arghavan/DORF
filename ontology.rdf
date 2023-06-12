@@ -27,8 +27,8 @@ term IRIs for individual terms), provide a link to the license, and
 indicate if any changes were made. You may do so in any reasonable
 manner, but not in any way that suggests the licensor endorses you or
 your use.
-&quot;DOR&quot;by Arghavan Akbarieh is licensed
-under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).</terms:license>
+       <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/1.0/"/>
+
         <rdfs:comment xml:lang="en">This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. 
 
 This ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. 
