@@ -10,6 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/2.0"/>
+         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+
         <terms:description xml:lang="en">This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. 
 
 This ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. 
@@ -34,8 +36,6 @@ This ontology would serve as a standardized representation of the concepts and r
 
 Additionally, DOR ontology would supports the processes involved in depositing reclaimed materials in a material bank,digital disgnosis, the conditions for acceptance of a material bank for second life cycle reuse, and the documentation required to ensure proper tracking and accounting of the materials in the construction industry..
 .</rdfs:comment>
- <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/1.0/"/>
-
     </owl:Ontology>
     
 
