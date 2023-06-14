@@ -718,23 +718,7 @@ Note: These connections, such as those created through the use of bolts, embody 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential
 :RemanufacturingPotential rdf:type owl:Class ;
-                          owl:equivalentClass [ owl:intersectionOf ( :CircularPotential
-                                                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                              owl:onProperty :hasCircularRequirement ;
-                                                                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                                                                              owl:onClass :CircularRequirement
-                                                                                            ]
-                                                                                            [ rdf:type owl:Restriction ;
-                                                                                              owl:onProperty :hasCircularRequirement ;
-                                                                                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                              owl:onClass :Intervention
-                                                                                            ]
-                                                                                          ) ;
-                                                                       rdf:type owl:Class
-                                                                     ]
-                                                                   ) ;
-                                                rdf:type owl:Class
-                                              ] ;
+                          rdfs:subClassOf :CircularPotential ;
                           rdfs:comment """Remanufacturing Potential is second to Reuse Potential. If an assembly, some sub-parts of the assembly might need to be replaced or repaired before being reused in the next life cycle.
 If an element, the element needs major interventions such as repaire before it is can be reused.""" ;
                           rdfs:label "Remanufacturing Potential"@en .
