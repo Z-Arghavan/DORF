@@ -402,6 +402,7 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement
 :CircularRequirement rdf:type owl:Class ;
+                     <http://purl.org/dc/terms/description> "For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property." ;
                      rdfs:comment "For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property." ;
                      rdfs:label "Circular Requirement" .
 
@@ -429,6 +430,7 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
                                                ]
                           ] ;
           <http://purl.org/dc/terms/description> "" ;
+          rdfs:comment "A Designer is an actor who \"Designs For\" a certain circurlar potential" ;
           rdfs:label "Designer"@en .
 
 
@@ -590,6 +592,7 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                                                      rdf:type owl:Class
                                                    ]
                               ] ;
+              rdfs:comment "A Manufacturer is an actor who \"Produces For\" a certain circurlar potential" ;
               rdfs:label "Manufacturer"@en .
 
 
@@ -609,6 +612,7 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                                                           rdf:type owl:Class
                                                         ]
                                    ] ;
+                   rdfs:comment "An agent of Material Bank who has the agency to \"Recertify For\" a certain circurlar potential after the assessments are done to check whether or not a component is reusable" ;
                    rdfs:label "Material Bank Agent"@en .
 
 
@@ -691,6 +695,7 @@ Note: These connections, such as those created through the use of bolts, embody 
                                                                  rdf:type owl:Class
                                                                ]
                                           ] ;
+                          rdfs:comment "An actor who does an audit before decommissioining phase starts and can audit for a ceratin circular potential" ;
                           rdfs:label "Pre-Deconstruction Auditor"@en .
 
 

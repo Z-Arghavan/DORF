@@ -10,8 +10,6 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/2.0"/>
-         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-
         <terms:description xml:lang="en">This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. 
 
 This ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. 
@@ -29,13 +27,16 @@ term IRIs for individual terms), provide a link to the license, and
 indicate if any changes were made. You may do so in any reasonable
 manner, but not in any way that suggests the licensor endorses you or
 your use.
-
+&quot;DOR&quot;by Arghavan Akbarieh is licensed
+under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).</terms:license>
         <rdfs:comment xml:lang="en">This is an ontology for the Semantic Material Bank, End-of-Life cycle and circular transformation. 
 
 This ontology would serve as a standardized representation of the concepts and relationships involved in the material reuse process, providing a common framework for data integration and analysis, and facilitating knowledge sharing among stakeholders in the building deconstruction and material reuse community. The DOR ontology describes the concepts and relationships involved in the process of decommissioning a building, reclaiming reusable product, and  supporting the reuse assessment and decision-making  for later use in new construction projects. 
 
 Additionally, DOR ontology would supports the processes involved in depositing reclaimed materials in a material bank,digital disgnosis, the conditions for acceptance of a material bank for second life cycle reuse, and the documentation required to ensure proper tracking and accounting of the materials in the construction industry..
-.</rdfs:comment>
+
+&quot;DOR&quot;by Arghavan Akbarieh is licensed
+under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).</rdfs:comment>
     </owl:Ontology>
     
 
@@ -617,6 +618,7 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement">
+        <terms:description>For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property.</terms:description>
         <rdfs:comment>For a Circular Potential to be realised after the deconstruction, often one or some requirements muct be met. This class is the range of hasCircularRequirement object property.</rdfs:comment>
         <rdfs:label>Circular Requirement</rdfs:label>
     </owl:Class>
@@ -658,6 +660,7 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description></terms:description>
+        <rdfs:comment>A Designer is an actor who &quot;Designs For&quot; a certain circurlar potential</rdfs:comment>
         <rdfs:label xml:lang="en">Designer</rdfs:label>
     </owl:Class>
     
@@ -904,6 +907,7 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A Manufacturer is an actor who &quot;Produces For&quot; a certain circurlar potential</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
     </owl:Class>
     
@@ -933,6 +937,7 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>An agent of Material Bank who has the agency to &quot;Recertify For&quot; a certain circurlar potential after the assessments are done to check whether or not a component is reusable</rdfs:comment>
         <rdfs:label xml:lang="en">Material Bank Agent</rdfs:label>
     </owl:Class>
     
@@ -1060,6 +1065,7 @@ Note: These connections, such as those created through the use of bolts, embody 
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>An actor who does an audit before decommissioining phase starts and can audit for a ceratin circular potential</rdfs:comment>
         <rdfs:label xml:lang="en">Pre-Deconstruction Auditor</rdfs:label>
     </owl:Class>
     
@@ -1103,6 +1109,7 @@ Note: These connections, such as those created through the use of bolts, embody 
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"/>
         <rdfs:comment>Remanufacturing Potential is second to Reuse Potential. If an assembly, some sub-parts of the assembly might need to be replaced or repaired before being reused in the next life cycle.
 If an element, the element needs major interventions such as repaire before it is can be reused.</rdfs:comment>
         <rdfs:label xml:lang="en">Remanufacturing Potential</rdfs:label>
