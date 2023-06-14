@@ -1103,27 +1103,6 @@ Note: These connections, such as those created through the use of bolts, embody 
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                                <owl:onClass rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                                <owl:onClass rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:comment>Remanufacturing Potential is second to Reuse Potential. If an assembly, some sub-parts of the assembly might need to be replaced or repaired before being reused in the next life cycle.
 If an element, the element needs major interventions such as repaire before it is can be reused.</rdfs:comment>
         <rdfs:label xml:lang="en">Remanufacturing Potential</rdfs:label>
