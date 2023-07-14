@@ -98,10 +98,6 @@ This section provides details for each class and property defined by Decommissio
             title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InspectionMode">Inspection Mode</a>
       </li>
       <li>
-         <a href="#InstallationConnection"
-            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection">Installation Type</a>
-      </li>
-      <li>
          <a href="#Intervention"
             title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention">Intervention</a>
       </li>
@@ -331,6 +327,8 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DiscardPotential">Discard Potential</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RecyclingPotential"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential">Recycling Potential</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RemanufacturingPotential"
+               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential">Remanufacturing Potential</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RepurposingPotential"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential">Repurposing Potential</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ReusePotential"
@@ -410,6 +408,12 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasConnectionType"
+               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType">has Connection Type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="ConnectionType">
@@ -456,6 +460,9 @@ Note: The irreversibility of this bond can pose challenges in the future, such a
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Designer</p>
+      <div class="comment">
+         <span class="markdown">A Designer is an actor who "Designs For" a certain circurlar potential</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -815,28 +822,6 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
          </dd>
       </dl>
    </div>
-   <div class="entity" id="InstallationConnection">
-      <h3>Installation Type<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection</p>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#connectionTo"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo">Connection to</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#/hasConnection"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection">has Connection</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Intervention">
       <h3>Intervention<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -901,6 +886,9 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Manufacturer</p>
+      <div class="comment">
+         <span class="markdown">A Manufacturer is an actor who "Produces For" a certain circurlar potential</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -950,6 +938,9 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent</p>
+      <div class="comment">
+         <span class="markdown">An agent of Material Bank who has the agency to "Recertify For" a certain circurlar potential after the assessments are done to check whether or not a component is reusable</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1158,6 +1149,9 @@ Note: These connections, such as those created through the use of bolts, embody 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PreDeconstructionAuditor</p>
+      <div class="comment">
+         <span class="markdown">An actor who does an audit before decommissioining phase starts and can audit for a ceratin circular potential</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1214,18 +1208,6 @@ Note: These connections, such as those created through the use of bolts, embody 
                title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#/hasConnection"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection">has Connection</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#connectionTo"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo">Connection to</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="RecyclableMaterial">
@@ -1278,22 +1260,12 @@ Note: These connections, such as those created through the use of bolts, embody 
 If an element, the element needs major interventions such as repaire before it is can be reused.</span>
       </div>
       <dl class="description">
-         <dt>is equivalent to</dt>
+         <dt>has super-classes</dt>
          <dd>
             <a href="#CircularPotential"
                title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential">Circular Potential</a>
-            <sup class="type-c" title="class">c</sup> 
-            <span class="logic">and</span> ((<a href="#hasCircularRequirement"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement">has Circular Requirement</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">min</span> 0 <a href="#CircularRequirement"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularRequirement">Circular Requirement</a>
-            <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#hasCircularRequirement"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement">has Circular Requirement</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">min</span> 1 <a href="#Intervention"
-               title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention">Intervention</a>
-            <sup class="type-c" title="class">c</sup>))</dd>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="RenewableMaterial">
@@ -1545,10 +1517,6 @@ If an element, the element needs major interventions such as repaire before it i
             title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor">Audits For</a>
       </li>
       <li>
-         <a href="#connectionTo"
-            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo">Connection to</a>
-      </li>
-      <li>
          <a href="#designsFor"
             title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor">Designs For</a>
       </li>
@@ -1559,10 +1527,6 @@ If an element, the element needs major interventions such as repaire before it i
       <li>
          <a href="#hasCircularRequirement"
             title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularRequirement">has Circular Requirement</a>
-      </li>
-      <li>
-         <a href="#/hasConnection"
-            title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection">has Connection</a>
       </li>
       <li>
          <a href="#hasConnectionType"
@@ -1649,35 +1613,6 @@ If an element, the element needs major interventions such as repaire before it i
          </dl>
       </div>
    </div>
-   <div class="entity" id="connectionTo">
-      <h3>Connection to<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#InstallationConnection"
-                  title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection">Installation Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#https://w3id.org/bpo#Product" title="https://w3id.org/bpo#Product">product</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#/hasConnection"
-                  title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection">has Connection</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="designsFor">
       <h3>Designs For<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1729,6 +1664,11 @@ If an element, the element needs major interventions such as repaire before it i
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1767,35 +1707,6 @@ If an element, the element needs major interventions such as repaire before it i
          </dl>
       </div>
    </div>
-   <div class="entity" id="/hasConnection">
-      <h3>has Connection<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.org/bpo#Product" title="https://w3id.org/bpo#Product">product</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#InstallationConnection"
-                  title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection">Installation Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#connectionTo"
-                  title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo">Connection to</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasConnectionType">
       <h3>has Connection Type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1813,10 +1724,6 @@ If an element, the element needs major interventions such as repaire before it i
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#InstallationConnection"
-                  title="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection">Installation Type</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection"
                   title="https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection">component connection</a>
                <sup class="type-c" title="class">c</sup>
@@ -1883,6 +1790,11 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2301,6 +2213,11 @@ By using the "has Source Type" property, one can associate a material with a spe
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2427,6 +2344,11 @@ A reusable element can have one design life and multiple service lives, whereas 
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2463,6 +2385,11 @@ has Economic life, can be used in cases where the exact service life or design l
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2501,6 +2428,11 @@ has Economic life, can be used in cases where the exact service life or design l
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2537,6 +2469,11 @@ A reusable element can have one design life and multiple service lives, whereas 
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2575,6 +2512,11 @@ A reusable element can have one design life and multiple service lives, whereas 
                <a href="https://www.projekt-scope.de/ontologies/bpo/#Component"
                   target="_blank"
                   title="https://www.projekt-scope.de/ontologies/bpo/#Component">component</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://www.projekt-scope.de/ontologies/bpo/#Entity"
+                  target="_blank"
+                  title="https://www.projekt-scope.de/ontologies/bpo/#Entity">entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2615,50 +2557,6 @@ A reusable element can have one design life and multiple service lives, whereas 
             </dd>
          </dl>
       </div>
-   </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="annotationproperties">
-   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
-            <span>description</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/bpo#isComposedOfEntity" title="https://w3id.org/bpo#isComposedOfEntity">
-            <span>is composed of entity</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
-            <span>license</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="http://purl.org/dc/terms/description">
-      <h3>description<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
-   </div>
-   <div class="entity" id="https://w3id.org/bpo#isComposedOfEntity">
-      <h3>is composed of entity<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/bpo#isComposedOfEntity</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/license">
-      <h3>license<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
