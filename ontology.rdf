@@ -98,18 +98,6 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection"/>
-        <rdfs:range rdf:resource="https://w3id.org/bpo#Product"/>
-        <rdfs:label xml:lang="en">Connection to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor -->
 
 
@@ -132,6 +120,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).</rdfs:comment>
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -159,14 +148,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection"/>
-                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"/>
         <rdfs:comment>This object property elaborates the type of connection a &quot;Component Connection&quot; or &quot;Installation Connection&quot; has.</rdfs:comment>
         <rdfs:label xml:lang="en">has Connection Type</rdfs:label>
@@ -299,17 +281,6 @@ By using the &quot;has Source Type&quot; property, one can associate a material 
     
 
 
-    <!-- http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection">
-        <rdfs:domain rdf:resource="https://w3id.org/bpo#Product"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection"/>
-        <rdfs:label xml:lang="en">has Connection</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasFinalCircularPotential -->
 
 
@@ -321,6 +292,7 @@ By using the &quot;has Source Type&quot; property, one can associate a material 
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -380,6 +352,7 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -424,6 +397,7 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -445,6 +419,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -466,6 +441,7 @@ has Economic life, can be used in cases where the exact service life or design l
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -522,6 +498,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -543,6 +520,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                     <rdf:Description rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"/>
                     <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
                     <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Component"/>
+                    <rdf:Description rdf:about="https://www.projekt-scope.de/ontologies/bpo/#Entity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -826,15 +804,6 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection"/>
         <rdfs:comment>Inspection Method refers to the different methods or types of inspections based on the necessary documentation or national and international standards.</rdfs:comment>
         <rdfs:label xml:lang="en">Inspection Method</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection -->
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection">
-        <rdfs:label xml:lang="en">Installation Type</rdfs:label>
     </owl:Class>
     
 

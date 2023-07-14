@@ -64,14 +64,6 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
            rdfs:label "Audits For" .
 
 
-###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo
-:connectionTo rdf:type owl:ObjectProperty ;
-              owl:inverseOf <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection> ;
-              rdfs:domain :InstallationConnection ;
-              rdfs:range <https://w3id.org/bpo#Product> ;
-              rdfs:label "Connection to"@en .
-
-
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor
 :designsFor rdf:type owl:ObjectProperty ;
             rdfs:domain :Designer ;
@@ -86,6 +78,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
                                     owl:unionOf ( :FunctionalLayer
                                                   <https://w3id.org/bot#Building>
                                                   <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                                  <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                                 )
                                   ] ;
                       rdfs:range :CircularPotential ;
@@ -104,11 +97,7 @@ under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."""@en .
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType
 :hasConnectionType rdf:type owl:ObjectProperty ,
                             owl:FunctionalProperty ;
-                   rdfs:domain [ rdf:type owl:Class ;
-                                 owl:unionOf ( :InstallationConnection
-                                               <https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection>
-                                             )
-                               ] ;
+                   rdfs:domain <https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection> ;
                    rdfs:range :ConnectionType ;
                    rdfs:comment "This object property elaborates the type of connection a \"Component Connection\" or \"Installation Connection\" has." ;
                    rdfs:label "has Connection Type"@en .
@@ -199,13 +188,6 @@ By using the \"has Source Type\" property, one can associate a material with a s
                 rdfs:label "Recertifies For" .
 
 
-###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection
-<http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection> rdf:type owl:ObjectProperty ;
-                                                                       rdfs:domain <https://w3id.org/bpo#Product> ;
-                                                                       rdfs:range :InstallationConnection ;
-                                                                       rdfs:label "has Connection"@en .
-
-
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasFinalCircularPotential
 <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasFinalCircularPotential> rdf:type owl:ObjectProperty ,
                                                                                             owl:FunctionalProperty ;
@@ -213,6 +195,7 @@ By using the \"has Source Type\" property, one can associate a material with a s
                                                                                                  owl:unionOf ( :FunctionalLayer
                                                                                                                <https://w3id.org/bot#Building>
                                                                                                                <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                                                                                               <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                                                                                              )
                                                                                                ] ;
                                                                                    rdfs:range :CircularPotential ;
@@ -249,6 +232,7 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
                                              owl:unionOf ( :FunctionalLayer
                                                            <https://w3id.org/bot#Building>
                                                            <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                                           <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                                          )
                                            ] ;
                                rdfs:range xsd:string ;
@@ -278,6 +262,7 @@ The range of hasFinalCircularPotential could be the class CircularPotential, whi
                              owl:unionOf ( :FunctionalLayer
                                            <https://w3id.org/bot#Building>
                                            <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                           <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                          )
                            ] ;
                rdfs:range xsd:nonNegativeInteger ;
@@ -292,6 +277,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                owl:unionOf ( :FunctionalLayer
                                              <https://w3id.org/bot#Building>
                                              <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                             <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                            )
                              ] ;
                  rdfs:range xsd:nonNegativeInteger ;
@@ -306,6 +292,7 @@ has Economic life, can be used in cases where the exact service life or design l
                               owl:unionOf ( :FunctionalLayer
                                             <https://w3id.org/bot#Building>
                                             <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                            <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                           )
                             ] ;
                 rdfs:range xsd:nonNegativeInteger ;
@@ -344,6 +331,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                                                                               owl:unionOf ( :FunctionalLayer
                                                                                                             <https://w3id.org/bot#Building>
                                                                                                             <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                                                                                            <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                                                                                           )
                                                                                             ] ;
                                                                                 rdfs:range xsd:nonNegativeInteger ;
@@ -358,6 +346,7 @@ A reusable element can have one design life and multiple service lives, whereas 
                                                                                           owl:unionOf ( :FunctionalLayer
                                                                                                         <https://w3id.org/bot#Building>
                                                                                                         <https://www.projekt-scope.de/ontologies/bpo/#Component>
+                                                                                                        <https://www.projekt-scope.de/ontologies/bpo/#Entity>
                                                                                                       )
                                                                                         ] ;
                                                                             rdfs:range xsd:nonNegativeInteger ;
@@ -542,11 +531,6 @@ Reference: Durmisevic, E., 2006. Transformable building structures : design fo
                    rdfs:subClassOf :Inspection ;
                    rdfs:comment "Inspection Method refers to the different methods or types of inspections based on the necessary documentation or national and international standards." ;
                    rdfs:label "Inspection Method"@en .
-
-
-###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection
-:InstallationConnection rdf:type owl:Class ;
-                        rdfs:label "Installation Type"@en .
 
 
 ###  http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention

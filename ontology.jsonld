@@ -8,10 +8,25 @@
       "@id" : "https://w3id.org/bot#Building"
     }, {
       "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
     } ]
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType"
+  } ]
+}, {
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -20,6 +35,8 @@
       "@id" : "https://w3id.org/bot#Building"
     }, {
       "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
     } ]
   } ]
 }, {
@@ -32,10 +49,40 @@
       "@id" : "https://w3id.org/bot#Building"
     }, {
       "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
     } ]
   } ]
 }, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
+    }, {
+      "@id" : "https://w3id.org/bot#Building"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
+    }, {
+      "@id" : "https://w3id.org/bot#Building"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -47,7 +94,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -56,42 +103,8 @@
       "@id" : "https://w3id.org/bot#Building"
     }, {
       "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
     }, {
-      "@id" : "https://w3id.org/bot#Building"
-    }, {
-      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
-    }, {
-      "@id" : "https://w3id.org/bot#Building"
-    }, {
-      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
-    }, {
-      "@id" : "https://w3id.org/bot#Building"
-    }, {
-      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
     } ]
   } ]
 }, {
@@ -99,32 +112,46 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
+      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
+    }, {
+      "@id" : "https://w3id.org/bot#Building"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
       "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection"
     }, {
       "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MechanicalConnection"
     } ]
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid44"
+    "@id" : "_:genid49"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"
     }, {
-      "@id" : "_:genid46"
+      "@id" : "_:genid51"
     } ]
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -136,64 +163,68 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection"
-    }, {
-      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid52"
+    "@id" : "_:genid57"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasCircularPotential"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid60"
+      "@id" : "_:genid65"
     }, {
-      "@id" : "_:genid58"
+      "@id" : "_:genid63"
     }, {
-      "@id" : "_:genid56"
+      "@id" : "_:genid61"
     }, {
-      "@id" : "_:genid54"
+      "@id" : "_:genid59"
     } ]
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReusePotential"
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
+    }, {
+      "@id" : "https://w3id.org/bot#Building"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RemanufacturingPotential"
   } ]
 }, {
-  "@id" : "_:genid60",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RecyclingPotential"
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -203,28 +234,28 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#producesFor"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid67"
+    "@id" : "_:genid72"
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -234,34 +265,22 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#recertifiesFor"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid71"
+    "@id" : "_:genid76"
   } ]
 }, {
-  "@id" : "_:genid71",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"
     }, {
-      "@id" : "_:genid73"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid73",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
-    }, {
-      "@id" : "https://w3id.org/bot#Building"
-    }, {
-      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+      "@id" : "_:genid78"
     } ]
   } ]
 }, {
@@ -269,56 +288,56 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
+      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
+    }, {
+      "@id" : "https://w3id.org/bot#Building"
+    }, {
+      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
       "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ChemicalConnection"
     }, {
       "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#GravitationalConnection"
     } ]
   } ]
 }, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
-    }, {
-      "@id" : "https://w3id.org/bot#Building"
-    }, {
-      "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Component"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial"
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid87",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial"
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#auditsFor"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid84"
+    "@id" : "_:genid89"
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"
     }, {
-      "@id" : "_:genid86"
+      "@id" : "_:genid91"
     } ]
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -330,19 +349,19 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid91",
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial"
   } ]
 }, {
-  "@id" : "_:genid92",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#IrreversibleConnection"
   } ]
 }, {
-  "@id" : "_:genid93",
+  "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasFunctionalLayer"
@@ -351,7 +370,7 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#FunctionalLayer"
   } ]
 }, {
-  "@id" : "_:genid94",
+  "@id" : "_:genid99",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -362,19 +381,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasSourceType"
-  } ]
-}, {
-  "@id" : "_:genid95",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "0"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#hasConnectionType"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
@@ -431,7 +437,7 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "_:genid40"
+    "@id" : "_:genid45"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential",
@@ -481,7 +487,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor"
   }, {
-    "@id" : "_:genid43"
+    "@id" : "_:genid48"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#DirectConnection",
@@ -514,7 +520,7 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid51"
+    "@id" : "_:genid56"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Exposure",
@@ -572,7 +578,7 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "_:genid61"
+    "@id" : "_:genid66"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#HazardousMaterial",
@@ -587,7 +593,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType"
   }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial"
@@ -645,13 +651,6 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Inspection"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Installation Type"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Intervention",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -677,7 +676,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"
   }, {
-    "@id" : "_:genid65"
+    "@id" : "_:genid70"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ReversibleConnection"
@@ -720,7 +719,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor"
   }, {
-    "@id" : "_:genid66"
+    "@id" : "_:genid71"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialBankAgent",
@@ -735,7 +734,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor"
   }, {
-    "@id" : "_:genid70"
+    "@id" : "_:genid75"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType",
@@ -762,7 +761,7 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "_:genid78"
+    "@id" : "_:genid83"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonHazardousMaterial",
@@ -777,7 +776,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType"
   }, {
-    "@id" : "_:genid81"
+    "@id" : "_:genid86"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#NonRenewableMaterial",
@@ -793,7 +792,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType"
   }, {
-    "@id" : "_:genid82"
+    "@id" : "_:genid87"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RenewableMaterial"
@@ -853,7 +852,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#Actor"
   }, {
-    "@id" : "_:genid83"
+    "@id" : "_:genid88"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#PrimaryRawMaterial",
@@ -927,7 +926,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#MaterialSourceType"
   }, {
-    "@id" : "_:genid91"
+    "@id" : "_:genid96"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#RepurposingPotential",
@@ -969,7 +968,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#ConnectionType"
   }, {
-    "@id" : "_:genid92"
+    "@id" : "_:genid97"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#SecondaryRawMaterial",
@@ -1064,22 +1063,6 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#connectionTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Connection to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/bpo#Product"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#designsFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1118,7 +1101,7 @@
     "@value" : "allows for the quantification of circular potential for different components, buildings or functional layers. Depeneding on the indicator definition of the ontology user, e.g., percentage or ranking, a value could be attributed to demonstrate the circualr potential based on the desired indicator defintion."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid12"
+    "@id" : "_:genid11"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Circular Potential Indicator"
@@ -1149,7 +1132,7 @@
     "@value" : "This object property elaborates the type of connection a \"Component Connection\" or \"Installation Connection\" has."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid5"
+    "@id" : "https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1213,7 +1196,7 @@
     "@value" : "Economic Life refers ro the amount of time an element is in service before it is more economically advantageous to decommission or replace it. This dataproperty,\nhas Economic life, can be used in cases where the exact service life or design life is not known, or if it does not match the expected service life of an existing building."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid20"
+    "@id" : "_:genid21"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1341,7 +1324,7 @@
     "@value" : "According to ISO 20887, service life is the “period of time after installation during which a facility or its component parts meet or exceed the performance requirements.\"\nA reusable element can have one design life and multiple service lives, whereas a conventional element usually has the same design life as service life."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1413,19 +1396,6 @@
     "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#CircularPotential"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasConnection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/bpo#Product"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has Connection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#InstallationConnection"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/arnak/ontologies/2022/7/DOR/hasCurrentUseCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1433,7 +1403,7 @@
     "@value" : "represent the number of use counts that product is currently being used,  from the total reuse count that the product is designed for."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1450,7 +1420,7 @@
     "@value" : "is an object property that can be used to indicate the final circular potential of a product when it has reached the end of its life cycle. It can be used to link a product to its final circular potential, which may be different from its current or previous circular potentials.\n\nFor example, a product may have a reuse potential, a recycling potential, and a repurposing potential, but when it can no longer be repurposed, it may have a final circular potential of disposal or waste. The hasFinalCircularPotential property can be used to link the product to this final potential.\n\nThe range of hasFinalCircularPotential could be the class CircularPotential, while its domain would be the class Component or any other class that represents a thing that has circular potential."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid8"
+    "@id" : "_:genid6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1467,7 +1437,7 @@
     "@value" : "represent the number of reuses that are remaining from the total reuse count that the product is designed for."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid32"
+    "@id" : "_:genid35"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1484,7 +1454,7 @@
     "@value" : "indicates the total number of reuses, i.e., reuse counts, that the product is designed for."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid36"
+    "@id" : "_:genid40"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1501,7 +1471,7 @@
     "@value" : "Building"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid93"
+    "@id" : "_:genid98"
   } ]
 }, {
   "@id" : "https://w3id.org/bot#Element",
@@ -1549,7 +1519,7 @@
     "@value" : "Material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid94"
+    "@id" : "_:genid99"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/0.5/Materials#hasMaterial",
@@ -1571,7 +1541,7 @@
   "@id" : "https://www.projekt-scope.de/ontologies/bpo/#ComponentConnection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid95"
+    "@id" : "_:genid100"
   } ]
 }, {
   "@id" : "https://www.projekt-scope.de/ontologies/bpo/#Entity",
