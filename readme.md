@@ -117,13 +117,7 @@ Checkout the BE-OLS assessment:
 ==========
 https://cyberbuildlab.github.io/BE-OLS/individualOntologyDetail.html?ontology=Decommissioning%20and%20Reuse%20Ontology
 
-# 🧠 SPARQL Queries for Circularity, Reuse, and Regulation in BIM
 
-This repository contains a collection of semantic queries designed to enhance understanding and data extraction for **circular construction**, **reuse potential**, and **regulatory compliance** in (open)BIM workflows.
-
-All queries operate on an ontology developed for circular economy and digital building models, and are written in **SPARQL** using RDF-based vocabularies.
-
----
 Example SPARQL Queries
 ==========
 A Query to find all entities, which have any legal requirements when it comes to reuse or recycling
