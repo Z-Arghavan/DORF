@@ -10,6 +10,9 @@ The DOR ontology serves several important use cases in the built environment dom
 2.	Circular Databases: The ontology supports the exchange of information with circular databases. By providing a standardised representation of concepts and relationships, it enables seamless integration of data and knowledge sharing among stakeholders in the building deconstruction and material reuse community.
 3.	Material Bank Management: DOR supports the processes involved in depositing or assessing the reclaimed components in a material bank. It includes concepts for digital diagnosis, conditions for proper inventory management or remanufacturing of components in a material bank for second life cycle reuse, and documentation requirements to make sure the next reuser has enough information to make the right decisions.
 
+  <img src="images/DOR_updated.jpg">
+ 
+
 
 DOR Ontology Anatomy:
 ===================
