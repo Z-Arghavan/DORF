@@ -17,6 +17,7 @@ The DOR ontology serves several important use cases in the built environment dom
 
 
   <img src="images/1.-High level Circualr Construction Process Map.jpg">
+  More process maps in: https://orbilu.uni.lu/handle/10993/58846
 
 
 DOR Ontology Anatomy:
