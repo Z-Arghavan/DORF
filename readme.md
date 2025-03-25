@@ -110,6 +110,11 @@ The ontology includes the following data properties:
 9.	has Total Reuse Count
 10.	has Waste Code
 
+
+Checkout the BE-OLS assessment:
+==========
+https://cyberbuildlab.github.io/BE-OLS/individualOntologyDetail.html?ontology=Decommissioning%20and%20Reuse%20Ontology
+
 General Information:
 ==========
 
