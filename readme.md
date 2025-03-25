@@ -4,14 +4,19 @@ The DOR ontology focuses on capturing information related to the decommissioning
 
 The DOR ontology builds upon existing Linked Building Data ontologies such as Building Topology Ontology (BOT), Building Product Ontology (BPO), and Digital Construction Materials (DICM). By extending these established ontologies, DOR ensures compatibility and interoperability with other domain-specific knowledge models and applications.
 
+Find current version:
+===================
+https://z-arghavan.github.io/DORF/
+<img src="images/DOR_updated.jpg">
+
 **Use Cases:**
 The DOR ontology serves several important use cases in the built environment domain:
 1.	Pre- and Post-Deconstruction Planning: Stakeholders can utilise the ontology to enrich their information models for pre- and post-deconstruction planning. It enables them to capture and organise relevant data, facilitating effective decision-making throughout the deconstruction process.
 2.	Circular Databases: The ontology supports the exchange of information with circular databases. By providing a standardised representation of concepts and relationships, it enables seamless integration of data and knowledge sharing among stakeholders in the building deconstruction and material reuse community.
 3.	Material Bank Management: DOR supports the processes involved in depositing or assessing the reclaimed components in a material bank. It includes concepts for digital diagnosis, conditions for proper inventory management or remanufacturing of components in a material bank for second life cycle reuse, and documentation requirements to make sure the next reuser has enough information to make the right decisions.
 
-  <img src="images/DOR_updated.jpg">
- 
+
+  <img src="images/1.-High level Circualr Construction Process Map.jpg">
 
 
 DOR Ontology Anatomy:
@@ -109,4 +114,9 @@ General Information:
 ==========
 
 This ontology is developed as a part of the PhD research study by Arghavan Akbarieh. Do not hesitate to reach out to me and have a chat about digital, circular construction.
+
+References:
+==========
+1. Akbarieh, A. (2023). Information Modelling for Circular Transformation of Built Assets’ End-Of-Life. https://orbilu.uni.lu/handle/10993/58846
+3. Akbarieh, A., Teferle, F. N., & O’Donnell, J. (2023). Semantic Material Bank: A web-based linked data approach for building decommissioning and material reuse. In ECPPM 2022—eWork and eBusiness in Architecture, Engineering and Construction 2022. CRC Press. 
 
