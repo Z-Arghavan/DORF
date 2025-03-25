@@ -112,9 +112,68 @@ The ontology includes the following data properties:
 10.	has Waste Code
 
 
+
 Checkout the BE-OLS assessment:
 ==========
 https://cyberbuildlab.github.io/BE-OLS/individualOntologyDetail.html?ontology=Decommissioning%20and%20Reuse%20Ontology
+
+# 🧠 SPARQL Queries for Circularity, Reuse, and Regulation in BIM
+
+This repository contains a collection of semantic queries designed to enhance understanding and data extraction for **circular construction**, **reuse potential**, and **regulatory compliance** in (open)BIM workflows.
+
+All queries operate on an ontology developed for circular economy and digital building models, and are written in **SPARQL** using RDF-based vocabularies.
+
+---
+Example SPARQL Queries
+==========
+A Query to find all entities, which have any legal requirements when it comes to reuse or recycling
+
+    PREFIX : <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX ex: <http://www.semanticweb.org/arnak/ontologies/2022/7/DOR#>
+
+    SELECT DISTINCT ?entity ?Potential2 ?Potential1 WHERE {
+        ?entity ex:hasCircularPotential ?Potential1 .
+        ?entity ex:hasFinalCircularPotential ?Potential2 .
+        ?Potential2 ex:hasCircularRequirement ?ind .
+        ex:Legal rdfs:subClassOf ?ind .
+    }
+
+
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+A Query to find all components that have at least one entity with the waste code of 170101
+
+    SELECT ?component WHERE {
+        ?component rdf:type bpo:Component .
+        ?entity rdf:type bpo:Entity .
+        ?entity bpo:realisesObject ?component .
+        ?entity dicm:hasMaterial ?material .
+        ?material ex:hasWasteCode "170101"^^xsd:int .
+    }
+
+
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+A Query to find all entities, which will go out of the use cycle
+
+    SELECT (COUNT(?entity_zero) AS ?count_zero) (COUNT(?entity_nonzero) AS ?count_nonzero)
+    WHERE {
+        {
+            SELECT ?entity_zero WHERE {
+                ?entity_zero ex:hasRemainingReuseCount "0"^^xsd:int .
+            }
+        }
+        UNION
+        {
+            SELECT ?entity_nonzero WHERE {
+                ?entity_nonzero ex:hasRemainingReuseCount ?count .
+                FILTER (?count != "0"^^xsd:int)
+            }
+        }
+    }
+
+
 
 General Information:
 ==========
