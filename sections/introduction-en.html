@@ -1,24 +1,45 @@
-<h2 id="intro" class="list">
-  Introduction
-  <span class="backlink"> back to <a href="#toc">ToC</a></span>
-</h2>
-
+<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div class="markdown">
-  <p>
-    The DOR ontology is designed to capture and represent knowledge related to the decommissioning and reusing of buildings and built environment components. It provides a structured framework for knowledge representation and information exchange in the built environment. The DOR ontology offers a structured and standardized approach to capturing and organizing information related to decommissioning processes and the subsequent reuse of building materials and components. DOR promotes knowledge sharing, data integration, and interoperability by providing a common language for stakeholders involved in the lifecycle of built environment assets.
-  </p>
+The DOR ontology is designed to capture and represent knowledge related to the decommissioning and reusing of buildings and built environment components. It provides a structured framework for knowledge representation and information exchange in the built environment. The DOR ontology offers a structured and standardized approach to capturing and organizing information related to decommissioning processes and the subsequent reuse of building materials and components. DOR promotes knowledge sharing, data integration, and interoperability by providing a common language for stakeholders involved in the lifecycle of built environment assets.
+The DOR ontology also incorporates crucial aspects of circular economy principles. CircularPotential (to explain the End-of-Life Scenarios) and CircularRequirement classes enable the assessment of a building or component's potential for reuse and define the necessary conditions for achieving circularity after deconstruction. MaterialSourceType allows the classification of materials based on their sources, such as primary raw materials, secondary raw materials, recyclable materials, and more.
 
-  <p>
-    The DOR ontology also incorporates crucial aspects of circular economy principles. CircularPotential (to explain the End-of-Life Scenarios) and CircularRequirement classes enable the assessment of a building or component's potential for reuse and define the necessary conditions for achieving circularity after deconstruction. MaterialSourceType allows the classification of materials based on their sources, such as primary raw materials, secondary raw materials, recyclable materials, and more.
-  </p>
+Using the DOR ontology, stakeholders can enrich their information models for pre- and post-deconstruction planning or exchange with circular databases.
 
-  <p>
-    Using the DOR ontology, stakeholders can enrich their information models for pre- and post-deconstruction planning or exchange with circular databases.
-  </p>
+DOR is built upon other Linked Building Data ontologies, such as Building Topology Ontology (BOT), Building Product Ontology (BPO), and Digital Construction Materials (DICM) and extends them to include specific concepts and relationships relevant to decommissioning and reuse of buildings, functional layers and components. The DOR ontology ensures compatibility and interoperability with other domain-specific knowledge models and applications by leveraging established ontologies.</dive>
+<div class="markdown">
+    <div align="center">	
+    <img src="https://raw.githubusercontent.com/Z-Arghavan/DORF/blob/main/images/DOR_updated.jpg" alt="Overview of DOR" style="width:600px;">
+    <figcaption>Fig.1. Overview of DOR</figcaption>
+    <img src="https://raw.githubusercontent.com/Z-Arghavan/DORF/blob/main/images/1.-High%20level%20Circualr%20Construction%20Process%20Map.jpg"alt="Overview of DOR Process Maps" style="width:600px;">
+    <figcaption>Fig.2. Overview of Processes supported by DOR; Also see other DOR process maps : https://ucm.buildingsmart.org/en/use-cases/3333/en</figcaption>
+  </div>
+</div>
 
-  <p>
-    DOR is built upon other Linked Building Data ontologies, such as Building Topology Ontology (BOT), Building Product Ontology (BPO), and Digital Construction Materials (DICM) and extends them to include specific concepts and relationships relevant to decommissioning and reuse of buildings, functional layers and components. The DOR ontology ensures compatibility and interoperability with other domain-specific knowledge models and applications by leveraging established ontologies.
-  </p>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>DOR</b></td><td>&lt;http://www.semanticweb.org/arnak/ontologies/2022/7/DOR&gt;</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><b>bpo</b></td><td>&lt;https://w3id.org/bpo&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>bot</b></td><td>&lt;https://w3id.org/bot&gt;</td></tr>
+<tr><td><b>dicm</b></td><td>&lt;https://w3id.org/digitalconstruction/0.5/Materials&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+<tr><td><b>bpo2</b></td><td>&lt;https://www.projekt-scope.de/ontologies/bpo/&gt;</td></tr>
+</tbody>
+</table>
+</div>
+
+
 </div>
 
 <div class="markdown" style="text-align: center;">
@@ -35,27 +56,4 @@
   </figure>
 </div>
 
-<div id="namespacedeclarations">
-  <h3 id="namespace-declarations" class="list">Namespace declarations</h3>
-  <div align="center">
-    <table>
-      <caption><a href="#namespace-declarations">Table 1</a>: Namespaces used in the document</caption>
-      <tbody>
-        <tr><td><b>DOR</b></td><td>&lt;http://www.semanticweb.org/arnak/ontologies/2022/7/DOR&gt;</td></tr>
-        <tr><td></td><td></td></tr>
-        <tr><td><b>bpo</b></td><td>&lt;https://w3id.org/bpo&gt;</td></tr>
-        <tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
-        <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
-        <tr><td><b>bot</b></td><td>&lt;https://w3id.org/bot&gt;</td></tr>
-        <tr><td><b>dicm</b></td><td>&lt;https://w3id.org/digitalconstruction/0.5/Materials&gt;</td></tr>
-        <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
-        <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-        <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-        <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
-        <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
-        <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
-        <tr><td><b>bpo2</b></td><td>&lt;https://www.projekt-scope.de/ontologies/bpo/&gt;</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+
